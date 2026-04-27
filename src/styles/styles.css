@@ -1,0 +1,146 @@
+:root {
+  /* --secondary: #f5a418;
+  --secondary-hover: #f3b13e;
+  --outline-grey: #ababab; */
+  --bg: #fafafa;
+  --bg-dark: #111;
+  --text-black: #111;
+  --text-white: #fafafa;
+  --normal-text-size: 1.1em;
+  --small-text-size: 1.1em;
+  --navbar-text-size: 1.7em;
+  --h1-size: 2.2em;
+  --h2-size: 1.6em;
+  --h3-size: 1.4em;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --normal-text-size: 1em;
+    --small-text-size: 1em;
+    --navbar-text-size: 1.3em;
+    --h1-size: 2em;
+    --h2-size: 1.5em;
+    --h3-size: 1.3em;
+    --title-spacing: 1.4;
+  }
+}
+
+body,
+.container {
+  font-family: "Segoe UI", "Arial", "Helvetica", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: var(--bg);
+  color: var(--text-color); */
+}
+
+p {
+  font-size: var(--normal-text-size);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: var(--h1-size);
+  min-height: calc(var(--title-spacing) * var(--h1-size));
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+ul {
+  font-size: var(--normal-text-size);
+  line-height: 1.5;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* --- TopBar styles --- */
+.topbar-root {
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.topbar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+}
+
+.topbar-title-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topbar-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* color: var(--text-white, #fafafa); */
+}
+
+.topbar-buttons-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.topbar-buttons-row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  gap: 0.5rem;
+}
+
+.topbar-btn {
+  flex: 1 1 0;
+  max-width: 140px;
+  min-width: 0;
+  min-height: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topbar-btn:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+.topbar-btn-hidden {
+  visibility: hidden;
+}
+.topbar-btn:hover:not(:disabled) {
+  background: var(--secondary-hover, #f3b13e);
+  color: #fff;
+}

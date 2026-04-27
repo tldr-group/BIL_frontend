@@ -1,0 +1,46 @@
+name: Update content on spreadsheet update
+
+on:
+  workflow_dispatch:
+    types: [spreadsheet_update]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "yarn"
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Create update branch
+        run: |
+          DATE_STR=$(date +'%Y%m%d')
+          TS_HASH=$(date +%s)
+          BRANCH_NAME="update-${DATE_STR}-${TS_HASH}"
+          git checkout -b "$BRANCH_NAME"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+
+      - name: Run script to update JSON
+        run: yarn tsx scripts/parseSheet.ts "$SHEET_URL"
+        env:
+          SHEET_URL: ${{ secrets.SHEET_URL }}
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/dynamic_content.json
+          git commit -m "Update dynamic_content.json from spreadsheet"
+          git push --set-upstream origin "$BRANCH_NAME"
+
+      - name: Create pull request
+        run: |
+          gh pr create -B main -H "$BRANCH_NAME" --title "Update dynamic_content.json from spreadsheet" --body "Automated update from Google Sheet."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

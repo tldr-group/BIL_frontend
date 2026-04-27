@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "name": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": 1925,
+    "url": "https://www.gutenberg.org/ebooks/64317",
+    "type": "classic"
+  },
+  {
+    "id": 1,
+    "name": "Frankenstein, or the Modern Prometheus",
+    "author": "Mary Wollstonecraft Shelley",
+    "year": 1818,
+    "url": "https://www.gutenberg.org/ebooks/84",
+    "type": "horror"
+  },
+  {
+    "id": 2,
+    "name": "Don Quixote",
+    "author": "Miguel de Cervantes",
+    "year": 1605,
+    "url": "https://www.gutenberg.org/ebooks/996",
+    "type": "classic"
+  },
+  {
+    "id": 4,
+    "name": "The War of the Worlds",
+    "author": "H. G. Wells",
+    "year": 1898,
+    "url": "https://www.gutenberg.org/ebooks/36",
+    "type": "sci-fi"
+  },
+  {
+    "id": 5,
+    "name": "Moby Dick; or, The Whale",
+    "author": "Herman Melville",
+    "year": 1851,
+    "url": "https://www.gutenberg.org/ebooks/2701",
+    "type": "classic"
+  },
+  {
+    "id": 6,
+    "name": "Dracula",
+    "author": "Bram Stoker",
+    "year": 1897,
+    "url": "https://www.gutenberg.org/ebooks/345",
+    "type": "horror"
+  },
+  {
+    "id": 7,
+    "name": "Silas Marner",
+    "author": "George Eliot",
+    "year": 1861,
+    "url": "https://www.gutenberg.org/ebooks/550",
+    "type": "classic"
+  }
+]
