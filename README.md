@@ -1,10 +1,17 @@
-# updatable_webring_template
+# BIL frontend
 MVP for a 'webring' - structured set of links to other (scientific) data - which can be updated (new content added + site rebuilt) via some external source (in this case, google sheets). Basically, it's a static site with a google sheets CMS.
 
 
-## Warnings:
-- This assumes your spreadsheet is viewable by anyone with the link - I've structured it this way because I don't care too much about the contents of the spreadsheet. If this is important to you, set up a Google cloud service worker and use that (and keep the spreadsheet private).
-- Keep the spreadsheet view-only with link, otherwise users could spam the update button.
+## TODO:
+
+1. Get spreadsheet v2 working & get update working locally
+2. Get google sheets download image processing script 
+2. Refactor logic
+3. Refactor styling
+
+
+
+
 
 ## Instructions:
 
