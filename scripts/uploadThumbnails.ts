@@ -1,6 +1,6 @@
 import {downloadDriveFolderFilesAsData, getAuthClient, listDriveImages} from "./driveHelpers";
 import {processDriveFolderAndData, writeBufferToFile} from "./processImages";
-import {listR2DriveFolders} from "./r2Helpers";
+import {listR2DriveFolders, uploadDriveFolderAndDataToR2} from "./r2Helpers";
 
 async function main() {
     const [, , googleDriveUrl] = process.argv;
@@ -28,21 +28,22 @@ async function main() {
             if (!r2Folder) return true; // Folder missing in R2, needs download
             return (driveFolder.files?.length || 0) !== (r2Folder.files?.length || 0);
         })
-        .sort((a, b) => a.name.localeCompare(b.name));
+        .sort((a, b) => {
+            // Natural sort for folder names with numbers
+            return a.name.localeCompare(b.name, undefined, {numeric: true, sensitivity: "base"});
+        });
 
     console.log(
-        "Folders to download:",
+        "Folders not on R2:",
         foldersToDownload.map((f) => f.name)
     );
 
-    const downloadedImages = await downloadDriveFolderFilesAsData(foldersToDownload[0], client);
-    const processed = await processDriveFolderAndData(downloadedImages);
-
-    writeBufferToFile(processed.files[0].buffer, `./output/${processed.files[0].name}`);
-
-    // console.log("Found files:", driveFiles);
-
-    // console.log("Found files:", files);
+    for (const folder of foldersToDownload) {
+        console.log(`Downloading and processing folder: ${folder.name}`);
+        const downloadedImages = await downloadDriveFolderFilesAsData(folder, client);
+        const processed = await processDriveFolderAndData(downloadedImages);
+        uploadDriveFolderAndDataToR2(processed);
+    }
 }
 
 main();

@@ -1,5 +1,5 @@
-import {DriveFile, DriveFolder} from "./driveHelpers";
-import {S3Client, ListObjectsV2Command} from "@aws-sdk/client-s3";
+import {DriveFile, DriveFolder, DriveFolderAndData} from "./driveHelpers";
+import {S3Client, ListObjectsV2Command, PutObjectCommand} from "@aws-sdk/client-s3";
 
 import fs from "fs";
 import path from "path";
@@ -94,4 +94,28 @@ export async function listR2DriveFolders(rootPrefix: string): Promise<DriveFolde
     const workers = Array.from({length: concurrency}, () => worker());
     await Promise.all(workers);
     return results;
+}
+
+// Uploads all files in a DriveFolderAndData to R2, creating intermediate folders as needed
+export async function uploadDriveFolderAndDataToR2(folder: DriveFolderAndData) {
+    for (const file of folder.files) {
+        let key: string;
+        if (file.id.includes("modal")) {
+            key = `modal/${folder.name}/${file.name}`;
+        } else if (file.id.includes("thumb")) {
+            key = `thumbnail/${folder.name}/${file.name}`;
+        } else {
+            key = `${folder.name}/${file.name}`;
+        }
+        // Ensure key uses forward slashes and no double slashes
+        key = key.replace(/\/+/g, "/");
+        const command = new PutObjectCommand({
+            Bucket: R2_BUCKET,
+            Key: key,
+            Body: Buffer.from(file.buffer),
+            ContentType: "image/" + (file.name.split(".").pop() || "jpeg")
+        });
+        await s3.send(command);
+        console.log(`Uploaded ${file.name} to ${key}`);
+    }
 }

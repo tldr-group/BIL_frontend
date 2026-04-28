@@ -6,13 +6,8 @@ import sharp from "sharp";
 
 import {DriveFileAndData, DriveFolderAndData} from "./driveHelpers";
 
-function getPlaneSuffix(filename: string): string | null {
-    const lower = filename.toLowerCase();
-    for (const plane of ["xy", "xz", "yz"]) {
-        if (lower.includes(plane)) return plane;
-    }
-    return null;
-}
+const THUMB_SIZE = 300;
+const MODAL_SIZE = 600;
 
 async function removeWhitespacePadding(img: sharp.Sharp): Promise<sharp.Sharp> {
     // Use trim() to remove whitespace (assumes white is 255)
@@ -66,12 +61,16 @@ export async function processDriveFolderAndData(
         img = await cropIfSquare(img, info);
         info = await img.metadata();
 
-        const thumbName = `${folder.name}_${imgIdx}H.png`;
-        const modalName = `${folder.name}_${imgIdx}H.png`;
+        const thumbName = `${folder.name}_${imgIdx}H.webp`;
+        const modalName = `${folder.name}_${imgIdx}H.webp`;
         // Thumbnail
-        const thumbBuffer = await (await resizeImage(img.clone(), 250, info)).png().toBuffer();
+        const thumbBuffer = await (await resizeImage(img.clone(), THUMB_SIZE, info))
+            .webp()
+            .toBuffer();
         // Modal
-        const modalBuffer = await (await resizeImage(img.clone(), 500, info)).png().toBuffer();
+        const modalBuffer = await (await resizeImage(img.clone(), MODAL_SIZE, info))
+            .webp()
+            .toBuffer();
         processedFiles.push({
             id: file.id + "_thumb",
             name: thumbName,
