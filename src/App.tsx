@@ -1,29 +1,133 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import {FC, useContext, useEffect, useState, useMemo} from "react";
+import {Routes, Route, Navigate, Outlet, useLocation, useNavigate} from "react-router-dom";
+import AppContext from "./interfaces/types";
+import ScanModal from "./components/ScanModal";
+import ContributeModal from "./components/ContributeModal";
 
-import { TopBar, DEFAULT_BUTTONS } from "./components/TopBar";
-import { SearchElement } from "./components/SearchElement";
+import HeroFold from "./components/HeroFold";
+import ExampleCards from "./components/ExampleCard";
+import SearchCard from "./components/SearchCard";
+import {Container} from "react-bootstrap";
 
-import { HomePage } from "./components/HomePage";
-import { DynamicContent } from "./components/DynamicContent";
+import "./assets/scss/App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import {scanMatchesSearch, smartShuffle} from "./interfaces/helpers";
+import ContributorModal from "./components/ContributorModal";
+import {FloatingButtons} from "./components/HeroButtons";
+import AboutModal from "./components/AboutModal";
 
-import "./styles/styles.css";
+export const App: FC = () => {
+    const {
+        scanData: [scanData],
+        searchText: [searchText],
+        selectedModalities: [selectedModalities],
+        resRange: [resRange],
+        sizeRange: [sizeRange],
+        selectedScan: [selectedScan, setSelectedScan],
+        showContribute: [showContribute, setShowContribute],
+        showContributors: [showContributors, setShowContributors],
+        showAbout: [showAbout, setShowAbout],
+        isSearching: [isSearching, setIsSearching]
+    } = useContext(AppContext)!;
 
-export const App = () => {
-  const [searchText, setSearchText] = useState("");
+    const navigate = useNavigate();
+    const location = useLocation();
+    // Memoize state, update when modal states change
+    const state = useMemo(
+        () => location.state as {background?: Location},
+        [location, showContribute, showContributors, showAbout]
+    );
 
-  const searchComponent = <SearchElement searchText={searchText} setSearchText={setSearchText} />;
+    const goBack = () => {
+        setSelectedScan(null);
+        setIsSearching(true);
+        navigate("search");
+    };
 
-  return (
-    <div className="container">
-      <TopBar title={"Example Updatable Site"} SearchComponent={searchComponent} buttons={DEFAULT_BUTTONS} />
+    // Determine if current route is '/search'
+    useEffect(() => {
+        if (location.pathname.startsWith("search")) {
+            setIsSearching(true);
+        } else if (location.pathname === "" || location.pathname === "home") {
+            setIsSearching(false);
+        }
+    }, [location.pathname, setIsSearching]);
 
-      <div style={{ paddingTop: "2em", maxWidth: "95%" }}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="search" element={<DynamicContent searchText={searchText} />} />
-        </Routes>
-      </div>
-    </div>
-  );
+    return (
+        <div className="app">
+            <HeroFold searching={isSearching} />
+            <FloatingButtons />
+            <Routes location={state?.background || location}>
+                <Route path="" element={<ExampleCards />} />
+                <Route path="home" element={<Navigate to="/" replace />} />
+                <Route
+                    path="search"
+                    element={
+                        <Container className="my-5">
+                            <div
+                                style={{
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    flexWrap: "wrap",
+                                    justifyContent: "space-evenly",
+                                    gap: 18,
+                                    alignItems: "stretch"
+                                }}
+                            >
+                                {smartShuffle(
+                                    scanData.filter((s) =>
+                                        scanMatchesSearch(
+                                            s,
+                                            searchText,
+                                            resRange,
+                                            sizeRange,
+                                            selectedModalities
+                                        )
+                                    ),
+                                    ["scanModality", "sampleID"]
+                                ).map((v, i) => (
+                                    <div
+                                        key={i}
+                                        onClick={() => {
+                                            {
+                                                setSelectedScan(v);
+                                                navigate(`search/${v.scanID}`);
+                                            }
+                                        }}
+                                        style={{cursor: "pointer"}}
+                                    >
+                                        <SearchCard scan={v} />
+                                    </div>
+                                ))}
+                            </div>
+                        </Container>
+                    }
+                />
+                <Route path="/search/:id" element={<ScanModal show={true} onClose={goBack} />} />
+            </Routes>
+
+            <Outlet />
+            {state?.background && (
+                <Routes>
+                    <Route
+                        path="/search/:id"
+                        element={<ScanModal show={true} onClose={goBack} />}
+                    />
+                </Routes>
+            )}
+            {/* Contribute Modal */}
+            {showContribute && (
+                <ContributeModal show={showContribute} onClose={() => setShowContribute(false)} />
+            )}
+            {showContributors && (
+                <ContributorModal
+                    show={showContributors}
+                    onClose={() => setShowContributors(false)}
+                />
+            )}
+            {showAbout && <AboutModal show={showAbout} onClose={() => setShowAbout(false)} />}
+        </div>
+    );
 };
+
+export default App;

@@ -4,10 +4,12 @@
     "main": "index.js",
     "license": "MIT",
     "dependencies": {
+        "bootstrap": "^5.3.8",
         "react": "^19.1.0",
         "react-bootstrap": "^2.10.10",
         "react-dom": "^19.1.0",
         "react-router-dom": "^7.11.0",
+        "react-slider": "^2.0.6",
         "zod": "^4.0.0"
     },
     "devDependencies": {
@@ -18,7 +20,10 @@
         "@vitejs/plugin-react": "^4.6.0",
         "csv-parse": "^6.0.0",
         "googleapis": "^171.4.0",
+        "sass": "^1.99.0",
+        "sass-embedded": "^1.99.0",
         "sharp": "^0.34.5",
+        "tailwindcss": "^4.2.4",
         "tsx": "^4.10.0",
         "typescript": "^5.8.3",
         "vite": "^7.0.0"
