@@ -4,10 +4,8 @@ MVP for a 'webring' - structured set of links to other (scientific) data - which
 
 ## TODO:
 
-1. Get spreadsheet v2 working & get update working locally
-2. Get google sheets download image processing script 
-2. Refactor logic
-3. Refactor styling
+2. Refactor logic?
+3. Refactor styling?
 
 
 

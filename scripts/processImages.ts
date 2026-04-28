@@ -54,7 +54,8 @@ export async function processDriveFolderAndData(
         }
 
         // Remove whitespace padding and crop if nearly square
-        const trimmed = img.trim({threshold: 10, background: {r: 255, g: 255, b: 255, alpha: 1}});
+        // const trimmed = img.trim({threshold: 10, background: {r: 255, g: 255, b: 255, alpha: 1}});
+        const trimmed = img;
         const cropDims = await getCropDims(trimmed);
         const cropped = cropDims ? trimmed.extract(cropDims) : trimmed;
 
