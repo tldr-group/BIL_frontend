@@ -27,3 +27,5 @@ old
 dist/
 .env
 auth/
+output/
+scripts/process_images.py

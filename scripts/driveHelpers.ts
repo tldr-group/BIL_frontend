@@ -1,3 +1,4 @@
+import {Readable} from "stream";
 import {google} from "googleapis";
 
 const drive = google.drive("v3");
@@ -11,6 +12,18 @@ export type DriveFolder = {
     id: string;
     name: string;
     files: DriveFile[];
+};
+
+export type DriveFileAndData = {
+    id: string;
+    name: string;
+    buffer: Uint8ClampedArray;
+};
+
+export type DriveFolderAndData = {
+    id: string;
+    name: string;
+    files: DriveFileAndData[];
 };
 
 export async function getAuthClient() {
@@ -82,4 +95,49 @@ export async function listDriveImages(rootFolderId: string, client: any): Promis
     const workers = Array.from({length: concurrency}, () => worker());
     await Promise.all(workers);
     return results;
+}
+
+// Download all files in a DriveFolder as buffers, returning DriveFolderAndData
+/**
+ * Downloads all files in a DriveFolder from Google Drive and returns a DriveFolderAndData
+ * suitable for processDriveFolderAndData (processImages.ts).
+ * @param folder DriveFolder (id, name, files[])
+ * @param client Authenticated Google API client
+ * @returns DriveFolderAndData with buffers for each file
+ */
+export async function downloadDriveFolderFilesAsData(
+    folder: DriveFolder,
+    client: any
+): Promise<DriveFolderAndData> {
+    async function downloadFile(fileId: string): Promise<Uint8ClampedArray> {
+        const res = await drive.files.get(
+            {
+                fileId,
+                alt: "media",
+                auth: client
+            },
+            {responseType: "stream"}
+        );
+        const stream: Readable = res.data as any;
+        const chunks: Buffer[] = [];
+        for await (const chunk of stream) {
+            chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
+        }
+        const buf = Buffer.concat(chunks);
+        return new Uint8ClampedArray(buf.buffer, buf.byteOffset, buf.length);
+    }
+    const files: DriveFileAndData[] = [];
+    for (const file of folder.files) {
+        try {
+            const buffer = await downloadFile(file.id);
+            files.push({id: file.id, name: file.name, buffer});
+        } catch (e) {
+            console.error(`Failed to download file ${file.name} (${file.id}):`, e);
+        }
+    }
+    return {
+        id: folder.id,
+        name: folder.name,
+        files
+    };
 }
