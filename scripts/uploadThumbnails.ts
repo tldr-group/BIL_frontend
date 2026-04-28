@@ -20,7 +20,8 @@ async function main() {
 
     console.log("Listing images in folder:", driveId);
     const driveFiles = await listDriveImages(driveId, client);
-    const r2Files = await listR2DriveFolders("");
+    const r2Files = await listR2DriveFolders("modal/");
+    console.log(r2Files);
 
     const foldersToDownload = driveFiles
         .filter((driveFolder) => {
@@ -39,10 +40,14 @@ async function main() {
     );
 
     for (const folder of foldersToDownload) {
-        console.log(`Downloading and processing folder: ${folder.name}`);
-        const downloadedImages = await downloadDriveFolderFilesAsData(folder, client);
-        const processed = await processDriveFolderAndData(downloadedImages);
-        uploadDriveFolderAndDataToR2(processed);
+        try {
+            console.log(`Downloading and processing folder: ${folder.name}`);
+            const downloadedImages = await downloadDriveFolderFilesAsData(folder, client);
+            const processed = await processDriveFolderAndData(downloadedImages);
+            uploadDriveFolderAndDataToR2(processed);
+        } catch (e) {
+            console.error(`Error processing folder ${folder.name}:`, e);
+        }
     }
 }
 
