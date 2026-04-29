@@ -1,3 +1,4 @@
+import {IMG_URL} from "../interfaces/types";
 import {FC, useState} from "react";
 import {Modal, Carousel} from "react-bootstrap";
 
@@ -161,7 +162,7 @@ const ContributorModal: FC<ContributorModalProps> = ({show, onClose}) => {
                                 >
                                     <a href={contrib.url} target="_blank" rel="noopener noreferrer">
                                         <img
-                                            src={`../assets/imgs/institutions/${contrib.imgName}.png`}
+                                            src={`${IMG_URL}/institutions/${contrib.imgName}.png`}
                                             alt={contrib.name}
                                             style={{
                                                 width: 420,

@@ -52,9 +52,7 @@ export const FloatingButtons: React.FC = () => {
     const navigate = useNavigate();
 
     const navPath = isSearching ? "" : "search";
-    const navButtonPath = isSearching
-        ? "/assets/imgs/icons/home.png"
-        : "/assets/imgs/icons/data.png";
+    const navButtonPath = isSearching ? "icons/home.png" : "icons/data.png";
     const label = isSearching ? "Home" : "Browse library";
 
     return (
@@ -69,7 +67,7 @@ export const FloatingButtons: React.FC = () => {
             }}
         >
             <FloatingButton
-                iconPath="/assets/imgs/icons/up.png" // Up arrow
+                iconPath="icons/up.png" // Up arrow
                 onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
                 ariaLabel="Scroll to top"
             />

@@ -1,9 +1,7 @@
 import {useState, useRef, useEffect, useContext, FC} from "react";
-import {useNavigate, Navigate} from "react-router-dom";
 import Fold from "./Fold";
 import {LargeFilterCard, DoubleSlider, ModalityCard} from "./LargeFilterCard";
 import SearchBar from "./SearchBar";
-import {Container, Row, Col, Button} from "react-bootstrap";
 import {HeroButtons} from "./HeroButtons";
 import AppContext, {isMobile, MIN_SIZE_NM, MAX_SIZE_NM, MAX_L_PX} from "../interfaces/types";
 
@@ -91,7 +89,7 @@ const HeroFold: FC<{searching: boolean}> = ({searching}) => {
             <div ref={heroRef} style={{position: "relative", minHeight: 180}}>
                 {/* Background image absolutely positioned, flush to HeroFold edge, height matches HeroFold */}
                 <img
-                    src="/assets/imgs/hero_rot.png"
+                    src="hero_rot.png"
                     alt="hero"
                     style={{
                         position: "absolute",
