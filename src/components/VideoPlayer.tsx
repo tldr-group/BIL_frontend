@@ -1,8 +1,9 @@
-import React, {useEffect, useRef} from "react";
+import {IMG_URL} from "../interfaces/types";
+import {useEffect, useRef} from "react";
 import {Form} from "react-bootstrap";
 
 const VideoPlayer = ({fname, active}: {fname: string; active: boolean}) => {
-    const path = `../assets/imgs/examples/${fname}.mp4`;
+    const path = `${IMG_URL}/examples/${fname}.mp4`;
     const vidRef = useRef<HTMLVideoElement>(null);
     const sliderRef = useRef<HTMLInputElement>(null);
 

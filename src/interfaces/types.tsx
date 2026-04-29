@@ -122,6 +122,8 @@ export const MODALITY_TO_COLOUR: Record<Modality, string> = {
     ANY: "#000000"
 };
 
+export const IMG_URL = "https://images.batteryimaginglibrary.com";
+
 // Utility to detect mobile
 export const isMobile = () => typeof window !== "undefined" && window.innerWidth <= 768;
 

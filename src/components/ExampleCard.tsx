@@ -2,7 +2,13 @@ import {FC, useRef, useState, useEffect, useContext} from "react";
 import {Card, Button} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import {Container} from "react-bootstrap";
-import AppContext, {ExampleCardData, isMobile, MAX_L_PX, MAX_SIZE_NM} from "../interfaces/types";
+import AppContext, {
+    ExampleCardData,
+    isMobile,
+    MAX_L_PX,
+    MAX_SIZE_NM,
+    IMG_URL
+} from "../interfaces/types";
 import {renderModality} from "../interfaces/helpers";
 import VideoPlayer from "./VideoPlayer";
 
@@ -166,7 +172,7 @@ const ExampleCard: FC<ExampleCardProps> = ({cardData}) => {
                     <VideoPlayer fname={cardData.imgPath} active={hover} />
                 ) : (
                     <img
-                        src={`../assets/imgs/examples/${cardData.imgPath}.png`}
+                        src={`${IMG_URL}/examples/${cardData.imgPath}.png`}
                         style={{
                             objectFit: "cover",
                             width: 300,

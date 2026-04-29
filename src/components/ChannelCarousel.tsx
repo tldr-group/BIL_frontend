@@ -1,3 +1,4 @@
+import {IMG_URL} from "../interfaces/types";
 import {FC, CSSProperties, useState, useRef, useEffect} from "react";
 
 interface ChannelCarouselProps {
@@ -17,7 +18,8 @@ const ChannelCarousel: FC<ChannelCarouselProps> = ({
     const imgRef = useRef<HTMLImageElement>(null);
     const [imgStyle, setImgStyle] = useState<CSSProperties>({});
 
-    const images = thumbnailName.map((name) => `/assets/imgs/${rootDir}/${scanID}/${name}`);
+    const images = thumbnailName.map((name) => `${IMG_URL}/${rootDir}/${scanID}/${name}`);
+    console.log("ChannelCarousel images:", images);
 
     // Adjust image style for best fit and aspect ratio
     useEffect(() => {
