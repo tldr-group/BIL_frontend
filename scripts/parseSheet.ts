@@ -11,7 +11,7 @@ import {
     Modality,
     ScanDetails,
     ScanDetailsSchema
-} from "../src/types";
+} from "../src/interfaces/types";
 
 export const parseRow = (row: any): ScanDetails => {
     const parseDataDim = (input: string) => {
@@ -19,13 +19,13 @@ export const parseRow = (row: any): ScanDetails => {
         const parts = input.split(";");
         const result: (number | string)[] = [];
         for (const part of parts) {
-          const match = part.match(/^(\d+)([A-Za-z].*)?$/);
-          if (match) {
-            result.push(Number(match[1]));
-            if (match[2]) result.push(match[2]);
-          } else {
-            result.push(part);
-          }
+            const match = part.match(/^(\d+)([A-Za-z].*)?$/);
+            if (match) {
+                result.push(Number(match[1]));
+                if (match[2]) result.push(match[2]);
+            } else {
+                result.push(part);
+            }
         }
         return result;
     };
@@ -53,15 +53,15 @@ export const parseRow = (row: any): ScanDetails => {
     const getCitation = (shortcodes: string): string => {
         switch (shortcodes) {
             case "BIL":
-                return "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint";
+                return "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)";
             case "KINT":
                 return "S. J. Cooper et al, 'Methods—Kintsugi Imaging of Battery Electrodes: Distinguishing Pores from the Carbon Binder Domain using Pt Deposition', J. Electrochem. Soc. 169 070512, (2022)";
             case "TAILING":
-                return "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494";
+                return "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494, (2025)";
             case "SEI_TEM":
-                return "N. Mulcahy et al, 'Degradation and SEI Evolution in Alloy Anodes Revealed by Correlative Liquid-Cell Electrochemistry and Cryogenic Microscopy', arXiv preprint";
+                return "N. Mulcahy et al, 'Degradation and SEI Evolution in Alloy Anodes Revealed by Correlative Liquid-Cell Electrochemistry and Cryogenic Microscopy', arXiv preprint, (2025)";
             case "CHIP_TEM":
-                return "N. Mulcahy et al, 'A Workflow for Correlative in-situ Nano-chip Liquid Cell Transmission Electron Microscopy and Atom Probe Tomography Enabled by Cryogenic Plasma Focused Ion Beam', arXiv preprint";
+                return "N. Mulcahy et al, 'A Workflow for Correlative in-situ Nano-chip Liquid Cell Transmission Electron Microscopy and Atom Probe Tomography Enabled by Cryogenic Plasma Focused Ion Beam', arXiv preprint, (2025)";
             default:
                 return "";
         }
@@ -91,7 +91,7 @@ export const parseRow = (row: any): ScanDetails => {
     const thumbnailType = row["Thumbnail Type"];
     const thumbnailName = Array.from(
         {length: nThumbnails},
-        (_, i) => sampleID + "_" + (1 + i) + "H.png"
+        (_, i) => scanID + "_" + (1 + i) + "H.webp"
     );
     const scanParameters: Record<string, string> = JSON.parse(row["Scan Parameters"]) ?? {};
     const citations = row["Citations"].split(";").map((s: string) => getCitation(s.trim()));
@@ -209,10 +209,9 @@ async function main() {
         process.exit(1);
     }
 
-    // Write to src/dynamic_content.json
-    const outPath = path.join(__dirname, "../src/dynamic_content.json");
-    fs.writeFileSync(outPath, JSON.stringify(scans, null, 2));
-    console.log(`Successfully wrote ${scans.length} books to src/dynamic_content.json`);
+    const outPath = path.join(__dirname, "../src/assets/data.json");
+    fs.writeFileSync(outPath, JSON.stringify(scans, null, 4));
+    console.log(`Successfully wrote ${scans.length} scans to src/assets/data.json`);
 }
 
 main();

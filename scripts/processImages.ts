@@ -86,7 +86,9 @@ export async function processDriveFolderAndData(
     return {
         id: folder.id,
         name: folder.name,
-        files: processedFiles
+        files: processedFiles.sort((a, b) =>
+            a.name.localeCompare(b.name, undefined, {numeric: true})
+        )
     };
 }
 
