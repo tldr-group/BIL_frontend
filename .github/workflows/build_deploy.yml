@@ -36,7 +36,9 @@ jobs:
                   echo "${{ secrets.SERVICE_WORKER_B64 }}" | base64 -d > auth/service-worker.json
 
             - name: Update images
-              run: yarn tsx scripts/uploadThumbnails.ts ${DRIVE_URL}
+              run: yarn tsx scripts/uploadThumbnails.ts "$DRIVE_URL"
+              env:
+                  DRIVE_URL: ${{ secrets.DRIVE_URL }}
 
             - name: Setup Pages
               uses: actions/configure-pages@v4

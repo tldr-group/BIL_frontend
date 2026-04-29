@@ -2,7 +2,7 @@ import {downloadDriveFolderFilesAsData, getAuthClient, listDriveImages} from "./
 import {processDriveFolderAndData, writeBufferToFile} from "./processImages";
 import {listR2DriveFolders, uploadDriveFolderAndDataToR2} from "./r2Helpers";
 
-const UPLOAD_ALL = true; // Set to true to upload all folders, even if they exist on R2 with the same number of files
+const UPLOAD_ALL = false; // Set to true to upload all folders, even if they exist on R2 with the same number of files
 
 async function main() {
     const [, , googleDriveUrl] = process.argv;
