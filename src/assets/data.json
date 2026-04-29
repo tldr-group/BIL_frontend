@@ -15,7 +15,7 @@
         "dataDimensions_px": [1358, 969, "H2"],
         "dataDimensions_µm": [55, 39.24],
         "thumbnailType": "2H",
-        "thumbnailName": ["1_1H.png", "1_2H.png"],
+        "thumbnailName": ["1_1H.webp", "1_2H.webp"],
         "scanParameters": {
             "voltage": "5kV",
             "beam_current": "5nA",
@@ -24,7 +24,7 @@
         },
         "citations": [
             "S. J. Cooper et al, 'Methods—Kintsugi Imaging of Battery Electrodes: Distinguishing Pores from the Carbon Binder Domain using Pt Deposition', J. Electrochem. Soc. 169 070512, (2022)",
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Bartłomiej Winiarski",
         "licence": "CC-4.0",
@@ -53,7 +53,7 @@
         "dataDimensions_px": [1358, 970, "H5"],
         "dataDimensions_µm": [55, 39.38],
         "thumbnailType": "5H",
-        "thumbnailName": ["1_1H.png", "1_2H.png", "1_3H.png", "1_4H.png", "1_5H.png"],
+        "thumbnailName": ["2_1H.webp", "2_2H.webp", "2_3H.webp", "2_4H.webp", "2_5H.webp"],
         "scanParameters": {
             "voltage": "10keV",
             "beam_current": "1.6nA",
@@ -62,7 +62,7 @@
         },
         "citations": [
             "S. J. Cooper et al, 'Methods—Kintsugi Imaging of Battery Electrodes: Distinguishing Pores from the Carbon Binder Domain using Pt Deposition', J. Electrochem. Soc. 169 070512, (2022)",
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Bartłomiej Winiarski",
         "licence": "CC-4.0",
@@ -91,13 +91,13 @@
         "dataDimensions_px": [6144, 2048, 250, "H3"],
         "dataDimensions_µm": [411.65, 137.22, 250],
         "thumbnailType": "3H",
-        "thumbnailName": ["2_1H.png", "2_2H.png", "2_3H.png"],
+        "thumbnailName": ["3_1H.webp", "3_2H.webp", "3_3H.webp"],
         "scanParameters": {
             "voltage": "5kV",
             "beam_current": "26nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -126,13 +126,20 @@
         "dataDimensions_px": [1833, 610, 250, "H3"],
         "dataDimensions_µm": [412.43, 137.25, 250],
         "thumbnailType": "6H",
-        "thumbnailName": ["2_1H.png", "2_2H.png", "2_3H.png", "2_4H.png", "2_5H.png", "2_6H.png"],
+        "thumbnailName": [
+            "4_1H.webp",
+            "4_2H.webp",
+            "4_3H.webp",
+            "4_4H.webp",
+            "4_5H.webp",
+            "4_6H.webp"
+        ],
         "scanParameters": {
             "voltage": "5kV",
             "beam_current": "26nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -161,13 +168,13 @@
         "dataDimensions_px": [3400, 700],
         "dataDimensions_µm": [340, 70],
         "thumbnailType": "3H",
-        "thumbnailName": ["3_1H.png", "3_2H.png", "3_3H.png"],
+        "thumbnailName": ["5_1H.webp", "5_2H.webp", "5_3H.webp"],
         "scanParameters": {
             "voltage": "20kV",
             "beam_current": "26nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -196,13 +203,13 @@
         "dataDimensions_px": [220, 200],
         "dataDimensions_µm": [22, 20],
         "thumbnailType": "2H",
-        "thumbnailName": ["3_1H.png", "3_2H.png"],
+        "thumbnailName": ["6_1H.webp", "6_2H.webp"],
         "scanParameters": {
             "voltage": "20kV",
             "beam_current": "26nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -231,13 +238,13 @@
         "dataDimensions_px": [8192, 2048, "H11"],
         "dataDimensions_µm": [385.02, 96.26],
         "thumbnailType": "4H",
-        "thumbnailName": ["4_1H.png", "4_2H.png", "4_3H.png", "4_4H.png"],
+        "thumbnailName": ["7_1H.webp", "7_2H.webp", "7_3H.webp", "7_4H.webp"],
         "scanParameters": {
             "voltage": "5kV",
             "beam_current": "1.6nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -266,13 +273,13 @@
         "dataDimensions_px": [8192, 2048, "H11"],
         "dataDimensions_µm": [385.02, 98.3],
         "thumbnailType": "4H",
-        "thumbnailName": ["4_1H.png", "4_2H.png", "4_3H.png", "4_4H.png"],
+        "thumbnailName": ["8_1H.webp", "8_2H.webp", "8_3H.webp", "8_4H.webp"],
         "scanParameters": {
             "voltage": "5kV",
             "beam_current": "26nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -301,13 +308,13 @@
         "dataDimensions_px": [1724, 505, "H3"],
         "dataDimensions_µm": [387.9, 113.63],
         "thumbnailType": "4H",
-        "thumbnailName": ["4_1H.png", "4_2H.png", "4_3H.png", "4_4H.png"],
+        "thumbnailName": ["9_1H.webp", "9_2H.webp", "9_3H.webp", "9_4H.webp"],
         "scanParameters": {
             "voltage": "5kV",
             "beam_current": "26nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -336,13 +343,13 @@
         "dataDimensions_px": [1724, 505, "H5"],
         "dataDimensions_µm": [387.9, 113.63],
         "thumbnailType": "4H",
-        "thumbnailName": ["4_1H.png", "4_2H.png", "4_3H.png", "4_4H.png"],
+        "thumbnailName": ["10_1H.webp", "10_2H.webp", "10_3H.webp", "10_4H.webp"],
         "scanParameters": {
             "voltage": "5kV",
             "beam_current": "26nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -371,13 +378,13 @@
         "dataDimensions_px": [1500, 750],
         "dataDimensions_µm": [150, 75],
         "thumbnailType": "1H",
-        "thumbnailName": ["4_1H.png"],
+        "thumbnailName": ["11_1H.webp"],
         "scanParameters": {
             "voltage": "20kV",
             "beam_current": "26nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -406,13 +413,13 @@
         "dataDimensions_px": [150, 180],
         "dataDimensions_µm": [15, 18],
         "thumbnailType": "1H",
-        "thumbnailName": ["4_1H.png"],
+        "thumbnailName": ["12_1H.webp"],
         "scanParameters": {
             "voltage": "20kV",
             "beam_current": "26nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -441,13 +448,13 @@
         "dataDimensions_px": [3072, 1024, 486, "H3"],
         "dataDimensions_µm": [259, 86.33, 486],
         "thumbnailType": "3H",
-        "thumbnailName": ["5_1H.png", "5_2H.png", "5_3H.png"],
+        "thumbnailName": ["13_1H.webp", "13_2H.webp", "13_3H.webp"],
         "scanParameters": {
             "voltage": "2kV",
             "beam_current": "26nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -476,13 +483,13 @@
         "dataDimensions_px": [2048, 645, 486, "H3"],
         "dataDimensions_µm": [256, 80.63, 486],
         "thumbnailType": "3H",
-        "thumbnailName": ["5_1H.png", "5_2H.png", "5_3H.png"],
+        "thumbnailName": ["14_1H.webp", "14_2H.webp", "14_3H.webp"],
         "scanParameters": {
             "voltage": "2kV",
             "beam_current": "26nA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -511,14 +518,14 @@
         "dataDimensions_px": [792, 792, 1858],
         "dataDimensions_µm": [43560, 43560, 102190],
         "thumbnailType": "3H",
-        "thumbnailName": ["7_1H.png", "7_2H.png", "7_3H.png"],
+        "thumbnailName": ["15_1H.webp", "15_2H.webp", "15_3H.webp"],
         "scanParameters": {
             "pixel_size": "55um",
             "projections": "430",
             "angular_range": "360"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Winfried Kockelmann",
         "licence": "CC-4.0",
@@ -547,14 +554,14 @@
         "dataDimensions_px": [927, 927, 1831],
         "dataDimensions_µm": [50985, 50985, 100705],
         "thumbnailType": "4H",
-        "thumbnailName": ["8_1H.png", "8_2H.png", "8_3H.png", "8_4H.png"],
+        "thumbnailName": ["16_1H.webp", "16_2H.webp", "16_3H.webp", "16_4H.webp"],
         "scanParameters": {
             "pixel_size": "55um",
             "projections": "430",
             "angular_range": "360"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Winfried Kockelmann",
         "licence": "CC-4.0",
@@ -583,14 +590,14 @@
         "dataDimensions_px": [863, 863, 1971],
         "dataDimensions_µm": [47465, 47465, 108405],
         "thumbnailType": "4H",
-        "thumbnailName": ["10_1H.png", "10_2H.png", "10_3H.png", "10_4H.png"],
+        "thumbnailName": ["17_1H.webp", "17_2H.webp", "17_3H.webp", "17_4H.webp"],
         "scanParameters": {
             "pixel_size": "55um",
             "projections": "430",
             "angular_range": "360"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Winfried Kockelmann",
         "licence": "CC-4.0",
@@ -619,14 +626,14 @@
         "dataDimensions_px": [959, 959, 1546],
         "dataDimensions_µm": [27811, 27811, 44834],
         "thumbnailType": "3H",
-        "thumbnailName": ["7_1H.png", "7_2H.png", "7_3H.png"],
+        "thumbnailName": ["18_1H.webp", "18_2H.webp", "18_3H.webp"],
         "scanParameters": {
             "pixel_size": "29um",
             "projections": "376",
             "angular_range": "360"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Winfried Kockelmann",
         "licence": "CC-4.0",
@@ -655,14 +662,14 @@
         "dataDimensions_px": [891, 891, 1514],
         "dataDimensions_µm": [25839, 25839, 43906],
         "thumbnailType": "3H",
-        "thumbnailName": ["8_1H.png", "8_2H.png", "8_3H.png"],
+        "thumbnailName": ["19_1H.webp", "19_2H.webp", "19_3H.webp"],
         "scanParameters": {
             "pixel_size": "29um",
             "projections": "376",
             "angular_range": "360"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Winfried Kockelmann",
         "licence": "CC-4.0",
@@ -691,14 +698,14 @@
         "dataDimensions_px": [949, 949, 1510],
         "dataDimensions_µm": [27521, 27521, 43790],
         "thumbnailType": "3H",
-        "thumbnailName": ["9_1H.png", "9_2H.png", "9_3H.png"],
+        "thumbnailName": ["20_1H.webp", "20_2H.webp", "20_3H.webp"],
         "scanParameters": {
             "pixel_size": "29um",
             "projections": "376",
             "angular_range": "360"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Winfried Kockelmann",
         "licence": "CC-4.0",
@@ -727,14 +734,14 @@
         "dataDimensions_px": [1040, 1040, 1546],
         "dataDimensions_µm": [30160, 30160, 44834],
         "thumbnailType": "3H",
-        "thumbnailName": ["10_1H.png", "10_2H.png", "10_3H.png"],
+        "thumbnailName": ["21_1H.webp", "21_2H.webp", "21_3H.webp"],
         "scanParameters": {
             "pixel_size": "29um",
             "projections": "364",
             "angular_range": "360"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Winfried Kockelmann",
         "licence": "CC-4.0",
@@ -763,7 +770,7 @@
         "dataDimensions_px": [630, 630, "H2047"],
         "dataDimensions_µm": [12600, 12600],
         "thumbnailType": "5H",
-        "thumbnailName": ["11_1H.png", "11_2H.png", "11_3H.png", "11_4H.png", "11_5H.png"],
+        "thumbnailName": ["22_1H.webp", "22_2H.webp", "22_3H.webp", "22_4H.webp", "22_5H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "400",
@@ -774,7 +781,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -803,7 +810,7 @@
         "dataDimensions_px": [630, 630, "H2047"],
         "dataDimensions_µm": [12600, 12600],
         "thumbnailType": "5H",
-        "thumbnailName": ["12_1H.png", "12_2H.png", "12_3H.png", "12_4H.png", "12_5H.png"],
+        "thumbnailName": ["23_1H.webp", "23_2H.webp", "23_3H.webp", "23_4H.webp", "23_5H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "400",
@@ -814,7 +821,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -843,7 +850,7 @@
         "dataDimensions_px": [630, 630, "H2047"],
         "dataDimensions_µm": [12600, 12600],
         "thumbnailType": "5H",
-        "thumbnailName": ["12_1H.png", "12_2H.png", "12_3H.png", "12_4H.png", "12_5H.png"],
+        "thumbnailName": ["24_1H.webp", "24_2H.webp", "24_3H.webp", "24_4H.webp", "24_5H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "400",
@@ -854,7 +861,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -883,7 +890,7 @@
         "dataDimensions_px": [630, 630, "H2047"],
         "dataDimensions_µm": [12600, 12600],
         "thumbnailType": "4H",
-        "thumbnailName": ["11_1H.png", "11_2H.png", "11_3H.png", "11_4H.png"],
+        "thumbnailName": ["25_1H.webp", "25_2H.webp", "25_3H.webp", "25_4H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "400",
@@ -894,7 +901,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -923,7 +930,7 @@
         "dataDimensions_px": [630, 630, "H2047"],
         "dataDimensions_µm": [12600, 12600],
         "thumbnailType": "5H",
-        "thumbnailName": ["13_1H.png", "13_2H.png", "13_3H.png", "13_4H.png", "13_5H.png"],
+        "thumbnailName": ["26_1H.webp", "26_2H.webp", "26_3H.webp", "26_4H.webp", "26_5H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "400",
@@ -934,7 +941,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -963,7 +970,7 @@
         "dataDimensions_px": [630, 630, "H2047"],
         "dataDimensions_µm": [12600, 12600],
         "thumbnailType": "4H",
-        "thumbnailName": ["13_1H.png", "13_2H.png", "13_3H.png", "13_4H.png"],
+        "thumbnailName": ["27_1H.webp", "27_2H.webp", "27_3H.webp", "27_4H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "400",
@@ -974,7 +981,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1003,7 +1010,7 @@
         "dataDimensions_px": [630, 630, "H2047"],
         "dataDimensions_µm": [12600, 12600],
         "thumbnailType": "4H",
-        "thumbnailName": ["14_1H.png", "14_2H.png", "14_3H.png", "14_4H.png"],
+        "thumbnailName": ["28_1H.webp", "28_2H.webp", "28_3H.webp", "28_4H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "400",
@@ -1014,7 +1021,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1043,7 +1050,7 @@
         "dataDimensions_px": [630, 630, "H2047"],
         "dataDimensions_µm": [12600, 12600],
         "thumbnailType": "4H",
-        "thumbnailName": ["14_1H.png", "14_2H.png", "14_3H.png", "14_4H.png"],
+        "thumbnailName": ["29_1H.webp", "29_2H.webp", "29_3H.webp", "29_4H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "400",
@@ -1054,7 +1061,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1083,7 +1090,7 @@
         "dataDimensions_px": [630, 630, "H2047"],
         "dataDimensions_µm": [12600, 12600],
         "thumbnailType": "4H",
-        "thumbnailName": ["14_1H.png", "14_2H.png", "14_3H.png", "14_4H.png"],
+        "thumbnailName": ["30_1H.webp", "30_2H.webp", "30_3H.webp", "30_4H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "400",
@@ -1094,7 +1101,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1123,7 +1130,7 @@
         "dataDimensions_px": [1000, 1000, "H2047"],
         "dataDimensions_µm": [20000, 20000],
         "thumbnailType": "3H",
-        "thumbnailName": ["15_1H.png", "15_2H.png", "15_3H.png"],
+        "thumbnailName": ["31_1H.webp", "31_2H.webp", "31_3H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "200",
@@ -1134,7 +1141,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1163,7 +1170,7 @@
         "dataDimensions_px": [1000, 1000, "H2047"],
         "dataDimensions_µm": [20000, 20000],
         "thumbnailType": "2H",
-        "thumbnailName": ["15_1H.png", "15_2H.png"],
+        "thumbnailName": ["32_1H.webp", "32_2H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "200",
@@ -1174,7 +1181,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1203,7 +1210,7 @@
         "dataDimensions_px": [600, 600, "H2047"],
         "dataDimensions_µm": [24000, 24000],
         "thumbnailType": "4H",
-        "thumbnailName": ["16_1H.png", "16_2H.png", "16_3H.png", "16_4H.png"],
+        "thumbnailName": ["33_1H.webp", "33_2H.webp", "33_3H.webp", "33_4H.webp"],
         "scanParameters": {
             "pixel_size": "40um",
             "projections": "200",
@@ -1214,7 +1221,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1243,7 +1250,7 @@
         "dataDimensions_px": [600, 600, "H2047"],
         "dataDimensions_µm": [24000, 24000],
         "thumbnailType": "4H",
-        "thumbnailName": ["16_1H.png", "16_2H.png", "16_3H.png", "16_4H.png"],
+        "thumbnailName": ["34_1H.webp", "34_2H.webp", "34_3H.webp", "34_4H.webp"],
         "scanParameters": {
             "pixel_size": "40um",
             "projections": "200",
@@ -1254,7 +1261,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1283,7 +1290,7 @@
         "dataDimensions_px": [600, 600, "H2047"],
         "dataDimensions_µm": [24000, 24000],
         "thumbnailType": "3H",
-        "thumbnailName": ["16_1H.png", "16_2H.png", "16_3H.png"],
+        "thumbnailName": ["35_1H.webp", "35_2H.webp", "35_3H.webp"],
         "scanParameters": {
             "pixel_size": "40um",
             "projections": "400",
@@ -1294,7 +1301,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1323,7 +1330,7 @@
         "dataDimensions_px": [600, 600, "H2047"],
         "dataDimensions_µm": [24000, 24000],
         "thumbnailType": "3H",
-        "thumbnailName": ["16_1H.png", "16_2H.png", "16_3H.png"],
+        "thumbnailName": ["36_1H.webp", "36_2H.webp", "36_3H.webp"],
         "scanParameters": {
             "pixel_size": "40um",
             "projections": "400",
@@ -1334,7 +1341,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1363,7 +1370,7 @@
         "dataDimensions_px": [600, 600, "H2047"],
         "dataDimensions_µm": [24000, 24000],
         "thumbnailType": "4H",
-        "thumbnailName": ["16_1H.png", "16_2H.png", "16_3H.png", "16_4H.png"],
+        "thumbnailName": ["37_1H.webp", "37_2H.webp", "37_3H.webp", "37_4H.webp"],
         "scanParameters": {
             "pixel_size": "40um",
             "projections": "400",
@@ -1374,7 +1381,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1403,7 +1410,7 @@
         "dataDimensions_px": [600, 600, "H2047"],
         "dataDimensions_µm": [24000, 24000],
         "thumbnailType": "4H",
-        "thumbnailName": ["16_1H.png", "16_2H.png", "16_3H.png", "16_4H.png"],
+        "thumbnailName": ["38_1H.webp", "38_2H.webp", "38_3H.webp", "38_4H.webp"],
         "scanParameters": {
             "pixel_size": "40um",
             "projections": "400",
@@ -1414,7 +1421,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1443,7 +1450,7 @@
         "dataDimensions_px": [600, 600, "H2047"],
         "dataDimensions_µm": [24000, 24000],
         "thumbnailType": "4H",
-        "thumbnailName": ["16_1H.png", "16_2H.png", "16_3H.png", "16_4H.png"],
+        "thumbnailName": ["39_1H.webp", "39_2H.webp", "39_3H.webp", "39_4H.webp"],
         "scanParameters": {
             "pixel_size": "40um",
             "projections": "400",
@@ -1454,7 +1461,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1483,7 +1490,7 @@
         "dataDimensions_px": [600, 600, "H2047"],
         "dataDimensions_µm": [24000, 24000],
         "thumbnailType": "4H",
-        "thumbnailName": ["16_1H.png", "16_2H.png", "16_3H.png", "16_4H.png"],
+        "thumbnailName": ["40_1H.webp", "40_2H.webp", "40_3H.webp", "40_4H.webp"],
         "scanParameters": {
             "pixel_size": "40um",
             "projections": "400",
@@ -1494,7 +1501,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1523,7 +1530,7 @@
         "dataDimensions_px": [630, 630, "H2047"],
         "dataDimensions_µm": [12600, 12600],
         "thumbnailType": "4H",
-        "thumbnailName": ["17_1H.png", "17_2H.png", "17_3H.png", "17_4H.png"],
+        "thumbnailName": ["41_1H.webp", "41_2H.webp", "41_3H.webp", "41_4H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "400",
@@ -1534,7 +1541,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1563,7 +1570,7 @@
         "dataDimensions_px": [630, 630, "H2047"],
         "dataDimensions_µm": [12600, 12600],
         "thumbnailType": "4H",
-        "thumbnailName": ["17_1H.png", "17_2H.png", "17_3H.png", "17_4H.png"],
+        "thumbnailName": ["42_1H.webp", "42_2H.webp", "42_3H.webp", "42_4H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "projections": "400",
@@ -1574,7 +1581,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1603,7 +1610,7 @@
         "dataDimensions_px": [400, 400, "H2047"],
         "dataDimensions_µm": [4000, 4000],
         "thumbnailType": "4H",
-        "thumbnailName": ["18_1H.png", "18_2H.png", "18_3H.png", "18_4H.png"],
+        "thumbnailName": ["43_1H.webp", "43_2H.webp", "43_3H.webp", "43_4H.webp"],
         "scanParameters": {
             "pixel_size": "10um",
             "projections": "150",
@@ -1614,7 +1621,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1643,7 +1650,7 @@
         "dataDimensions_px": [400, 400],
         "dataDimensions_µm": [4000, 4000],
         "thumbnailType": "1H",
-        "thumbnailName": ["18_1H.png"],
+        "thumbnailName": ["44_1H.webp"],
         "scanParameters": {
             "pixel_size": "10um",
             "projections": "150",
@@ -1653,7 +1660,7 @@
             "sample_detector_distance": "700mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1682,7 +1689,7 @@
         "dataDimensions_px": [1515, 1515, 840],
         "dataDimensions_µm": [11983.65, 11983.65, 6644.4],
         "thumbnailType": "5H",
-        "thumbnailName": ["19_1H.png", "19_2H.png", "19_3H.png", "19_4H.png", "19_5H.png"],
+        "thumbnailName": ["45_1H.webp", "45_2H.webp", "45_3H.webp", "45_4H.webp", "45_5H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -1693,7 +1700,7 @@
             "energy": "73.755keV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1750,7 +1757,7 @@
         "dataDimensions_px": [1515, 1515, 840],
         "dataDimensions_µm": [11983.65, 11983.65, 6644.4],
         "thumbnailType": "5H",
-        "thumbnailName": ["20_1H.png", "20_2H.png", "20_3H.png", "20_4H.png", "20_5H.png"],
+        "thumbnailName": ["46_1H.webp", "46_2H.webp", "46_3H.webp", "46_4H.webp", "46_5H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -1761,7 +1768,7 @@
             "energy": "74.534keV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1862,13 +1869,13 @@
         "dataDimensions_px": [50, 50],
         "dataDimensions_µm": [6.25, 6.25],
         "thumbnailType": "3H",
-        "thumbnailName": ["21_1H.png", "21_2H.png", "21_3H.png"],
+        "thumbnailName": ["47_1H.webp", "47_2H.webp", "47_3H.webp"],
         "scanParameters": {
             "pixel_size": "0.125um",
             "projections": "1440"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jon Wright",
         "licence": "CC-4.0",
@@ -1945,7 +1952,7 @@
         "dataDimensions_px": [759, 759, 550],
         "dataDimensions_µm": [14064.27, 14064.27, 10191.5],
         "thumbnailType": "1H",
-        "thumbnailName": ["22_1H.png"],
+        "thumbnailName": ["48_1H.webp"],
         "scanParameters": {
             "pixel_size": "18.53um",
             "flats": "50",
@@ -1957,7 +1964,7 @@
             "exposure_time": "1.5ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -1986,7 +1993,7 @@
         "dataDimensions_px": [1419, 1419, 1300],
         "dataDimensions_µm": [11224.29, 11224.29, 10283],
         "thumbnailType": "1H",
-        "thumbnailName": ["22_1H.png"],
+        "thumbnailName": ["49_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -1998,7 +2005,7 @@
             "exposure_time": "6ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2027,7 +2034,7 @@
         "dataDimensions_px": [2559, 2559, 2160],
         "dataDimensions_µm": [8291.16, 8291.16, 6998.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["22_1H.png"],
+        "thumbnailName": ["50_1H.webp"],
         "scanParameters": {
             "pixel_size": "3.24um",
             "flats": "50",
@@ -2039,7 +2046,7 @@
             "exposure_time": "25ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2068,7 +2075,7 @@
         "dataDimensions_px": [2559, 2559, 2160],
         "dataDimensions_µm": [8291.16, 8291.16, 6998.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["22_1H.png"],
+        "thumbnailName": ["51_1H.webp"],
         "scanParameters": {
             "pixel_size": "3.24um",
             "flats": "50",
@@ -2080,7 +2087,7 @@
             "exposure_time": "20ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2109,7 +2116,7 @@
         "dataDimensions_px": [2559, 2559, 2160],
         "dataDimensions_µm": [8291.16, 8291.16, 6998.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["22_1H.png"],
+        "thumbnailName": ["52_1H.webp"],
         "scanParameters": {
             "pixel_size": "3.24um",
             "flats": "50",
@@ -2121,7 +2128,7 @@
             "exposure_time": "10ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2150,7 +2157,7 @@
         "dataDimensions_px": [2559, 2559, 2160],
         "dataDimensions_µm": [8291.16, 8291.16, 6998.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["22_1H.png"],
+        "thumbnailName": ["53_1H.webp"],
         "scanParameters": {
             "pixel_size": "3.24um",
             "flats": "50",
@@ -2162,7 +2169,7 @@
             "exposure_time": "5ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2191,7 +2198,7 @@
         "dataDimensions_px": [2559, 2559, 2160],
         "dataDimensions_µm": [8291.16, 8291.16, 6998.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["22_1H.png"],
+        "thumbnailName": ["54_1H.webp"],
         "scanParameters": {
             "pixel_size": "3.24um",
             "flats": "50",
@@ -2203,7 +2210,7 @@
             "exposure_time": "2.5ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2232,7 +2239,7 @@
         "dataDimensions_px": [2559, 2559, 2160],
         "dataDimensions_µm": [8291.16, 8291.16, 6998.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["22_1H.png"],
+        "thumbnailName": ["55_1H.webp"],
         "scanParameters": {
             "pixel_size": "3.24um",
             "flats": "50",
@@ -2244,7 +2251,7 @@
             "exposure_time": "1ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2273,7 +2280,7 @@
         "dataDimensions_px": [2048, 2048, 2048],
         "dataDimensions_µm": [1126.4, 1126.4, 1126.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["23_1H.png"],
+        "thumbnailName": ["56_1H.webp"],
         "scanParameters": {
             "pixel_size": "0.55um",
             "flats": "101",
@@ -2284,8 +2291,8 @@
             "exposure_time": "20ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint",
-            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)",
+            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2314,7 +2321,7 @@
         "dataDimensions_px": [2048, 2048, 2048],
         "dataDimensions_µm": [1126.4, 1126.4, 1126.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["24_1H.png"],
+        "thumbnailName": ["57_1H.webp"],
         "scanParameters": {
             "pixel_size": "0.55um",
             "flats": "101",
@@ -2325,8 +2332,8 @@
             "exposure_time": "20ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint",
-            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)",
+            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2355,7 +2362,7 @@
         "dataDimensions_px": [2048, 2048, 2048],
         "dataDimensions_µm": [1126.4, 1126.4, 1126.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["25_1H.png"],
+        "thumbnailName": ["58_1H.webp"],
         "scanParameters": {
             "pixel_size": "0.55um",
             "flats": "101",
@@ -2366,8 +2373,8 @@
             "exposure_time": "20ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint",
-            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)",
+            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2396,7 +2403,7 @@
         "dataDimensions_px": [2048, 2048, 2048],
         "dataDimensions_µm": [1126.4, 1126.4, 1126.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["26_1H.png"],
+        "thumbnailName": ["59_1H.webp"],
         "scanParameters": {
             "pixel_size": "0.55um",
             "flats": "101",
@@ -2407,8 +2414,8 @@
             "exposure_time": "20ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint",
-            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)",
+            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2437,7 +2444,7 @@
         "dataDimensions_px": [2048, 2048, 2048],
         "dataDimensions_µm": [1126.4, 1126.4, 1126.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["27_1H.png"],
+        "thumbnailName": ["60_1H.webp"],
         "scanParameters": {
             "pixel_size": "0.55um",
             "flats": "101",
@@ -2448,8 +2455,8 @@
             "exposure_time": "20ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint",
-            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)",
+            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2478,7 +2485,7 @@
         "dataDimensions_px": [2048, 2048, 2048],
         "dataDimensions_µm": [1126.4, 1126.4, 1126.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["28_1H.png"],
+        "thumbnailName": ["61_1H.webp"],
         "scanParameters": {
             "pixel_size": "0.55um",
             "flats": "101",
@@ -2489,8 +2496,8 @@
             "exposure_time": "20ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint",
-            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)",
+            "J.D Morley et al, 'Mine tailings as active electrode materials for Li-ion batteries', Cell Reports Sustainability 2 10 100494, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2519,7 +2526,7 @@
         "dataDimensions_px": [2048, 2048, 2048],
         "dataDimensions_µm": [1126.4, 1126.4, 1126.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["29_1H.png"],
+        "thumbnailName": ["62_1H.webp"],
         "scanParameters": {
             "pixel_size": "0.55um",
             "flats": "101",
@@ -2530,7 +2537,7 @@
             "exposure_time": "20ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2559,7 +2566,7 @@
         "dataDimensions_px": [1296, 1296, 966],
         "dataDimensions_µm": [1425.6, 1425.6, 1062.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["29_1H.png"],
+        "thumbnailName": ["63_1H.webp"],
         "scanParameters": {
             "pixel_size": "1.1um",
             "flats": "101",
@@ -2570,7 +2577,7 @@
             "exposure_time": "20ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2599,7 +2606,7 @@
         "dataDimensions_px": [6914, 6914, 2048],
         "dataDimensions_µm": [3802.7, 3802.7, 1126.4],
         "thumbnailType": "1H",
-        "thumbnailName": ["30_1H.png"],
+        "thumbnailName": ["64_1H.webp"],
         "scanParameters": {
             "pixel_size": "0.55um",
             "flats": "101",
@@ -2610,7 +2617,7 @@
             "exposure_time": "20ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2656,7 +2663,7 @@
         "dataDimensions_px": [992, 992, 2582],
         "dataDimensions_µm": [8928, 8928, 23238],
         "thumbnailType": "1H",
-        "thumbnailName": ["31_1H.png"],
+        "thumbnailName": ["65_1H.webp"],
         "scanParameters": {
             "pixel_size": "9um",
             "frame_binning": "2",
@@ -2667,7 +2674,7 @@
             "voltage": "200kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2696,7 +2703,7 @@
         "dataDimensions_px": [800, 800, 2668],
         "dataDimensions_µm": [16000, 16000, 53360],
         "thumbnailType": "1H",
-        "thumbnailName": ["32_1H.png"],
+        "thumbnailName": ["66_1H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "frame_binning": "2",
@@ -2707,7 +2714,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2736,7 +2743,7 @@
         "dataDimensions_px": [752, 752, 2686],
         "dataDimensions_µm": [12032, 12032, 42976],
         "thumbnailType": "1H",
-        "thumbnailName": ["33_1H.png"],
+        "thumbnailName": ["67_1H.webp"],
         "scanParameters": {
             "pixel_size": "16um",
             "frame_binning": "5",
@@ -2747,7 +2754,7 @@
             "voltage": "280kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2776,7 +2783,7 @@
         "dataDimensions_px": [752, 752, 2686],
         "dataDimensions_µm": [12032, 12032, 42976],
         "thumbnailType": "1H",
-        "thumbnailName": ["34_1H.png"],
+        "thumbnailName": ["68_1H.webp"],
         "scanParameters": {
             "pixel_size": "16um",
             "frame_binning": "5",
@@ -2787,7 +2794,7 @@
             "voltage": "280kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2816,7 +2823,7 @@
         "dataDimensions_px": [752, 752, 2686],
         "dataDimensions_µm": [12032, 12032, 42976],
         "thumbnailType": "1H",
-        "thumbnailName": ["35_1H.png"],
+        "thumbnailName": ["69_1H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "frame_binning": "2",
@@ -2827,7 +2834,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2856,7 +2863,7 @@
         "dataDimensions_px": [800, 800, 2668],
         "dataDimensions_µm": [16000, 16000, 53360],
         "thumbnailType": "1H",
-        "thumbnailName": ["36_1H.png"],
+        "thumbnailName": ["70_1H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "frame_binning": "2",
@@ -2867,7 +2874,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2896,7 +2903,7 @@
         "dataDimensions_px": [800, 800, 2668],
         "dataDimensions_µm": [16000, 16000, 53360],
         "thumbnailType": "1H",
-        "thumbnailName": ["37_1H.png"],
+        "thumbnailName": ["71_1H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "frame_binning": "2",
@@ -2907,7 +2914,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2936,7 +2943,7 @@
         "dataDimensions_px": [800, 800, 2668],
         "dataDimensions_µm": [16000, 16000, 53360],
         "thumbnailType": "1H",
-        "thumbnailName": ["38_1H.png"],
+        "thumbnailName": ["72_1H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "frame_binning": "2",
@@ -2947,7 +2954,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -2976,7 +2983,7 @@
         "dataDimensions_px": [800, 800, 2668],
         "dataDimensions_µm": [16000, 16000, 53360],
         "thumbnailType": "1H",
-        "thumbnailName": ["39_1H.png"],
+        "thumbnailName": ["73_1H.webp"],
         "scanParameters": {
             "pixel_size": "20um",
             "frame_binning": "2",
@@ -2987,7 +2994,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3016,7 +3023,7 @@
         "dataDimensions_px": [800, 800, 2668],
         "dataDimensions_µm": [21600, 21600, 72036],
         "thumbnailType": "1H",
-        "thumbnailName": ["40_1H.png"],
+        "thumbnailName": ["74_1H.webp"],
         "scanParameters": {
             "pixel_size": "27um",
             "frame_binning": "2",
@@ -3027,7 +3034,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3056,7 +3063,7 @@
         "dataDimensions_px": [800, 800, 2668],
         "dataDimensions_µm": [21600, 21600, 72036],
         "thumbnailType": "1H",
-        "thumbnailName": ["41_1H.png"],
+        "thumbnailName": ["75_1H.webp"],
         "scanParameters": {
             "pixel_size": "27um",
             "frame_binning": "2",
@@ -3067,7 +3074,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3096,7 +3103,7 @@
         "dataDimensions_px": [800, 800, 2668],
         "dataDimensions_µm": [28800, 28800, 96048],
         "thumbnailType": "1H",
-        "thumbnailName": ["42_1H.png"],
+        "thumbnailName": ["76_1H.webp"],
         "scanParameters": {
             "pixel_size": "36um",
             "frame_binning": "1",
@@ -3107,7 +3114,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3136,7 +3143,7 @@
         "dataDimensions_px": [800, 800, 2668],
         "dataDimensions_µm": [21600, 21600, 72036],
         "thumbnailType": "1H",
-        "thumbnailName": ["42_1H.png"],
+        "thumbnailName": ["77_1H.webp"],
         "scanParameters": {
             "pixel_size": "27um",
             "frame_binning": "2",
@@ -3147,7 +3154,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3176,7 +3183,7 @@
         "dataDimensions_px": [800, 800, 2668],
         "dataDimensions_µm": [28800, 28800, 96048],
         "thumbnailType": "1H",
-        "thumbnailName": ["43_1H.png"],
+        "thumbnailName": ["78_1H.webp"],
         "scanParameters": {
             "pixel_size": "36um",
             "frame_binning": "2",
@@ -3187,7 +3194,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3216,7 +3223,7 @@
         "dataDimensions_px": [800, 800, 2668],
         "dataDimensions_µm": [28800, 28800, 96048],
         "thumbnailType": "1H",
-        "thumbnailName": ["43_1H.png"],
+        "thumbnailName": ["79_1H.webp"],
         "scanParameters": {
             "pixel_size": "36um",
             "frame_binning": "4",
@@ -3227,7 +3234,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3256,7 +3263,7 @@
         "dataDimensions_px": [1568, 1568, 2194],
         "dataDimensions_µm": [25088, 25088, 35104],
         "thumbnailType": "1H",
-        "thumbnailName": ["43_1H.png"],
+        "thumbnailName": ["80_1H.webp"],
         "scanParameters": {
             "pixel_size": "16um",
             "frame_binning": "2",
@@ -3267,7 +3274,7 @@
             "voltage": "290kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3296,7 +3303,7 @@
         "dataDimensions_px": [1408, 1408, 2546],
         "dataDimensions_µm": [50688, 50688, 91656],
         "thumbnailType": "1H",
-        "thumbnailName": ["44_1H.png"],
+        "thumbnailName": ["81_1H.webp"],
         "scanParameters": {
             "pixel_size": "36um",
             "frame_binning": "4",
@@ -3307,7 +3314,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3336,7 +3343,7 @@
         "dataDimensions_px": [1408, 1408, 2560],
         "dataDimensions_µm": [56320, 56320, 102400],
         "thumbnailType": "1H",
-        "thumbnailName": ["44_1H.png"],
+        "thumbnailName": ["82_1H.webp"],
         "scanParameters": {
             "pixel_size": "40um",
             "frame_binning": "1",
@@ -3347,7 +3354,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3376,7 +3383,7 @@
         "dataDimensions_px": [1408, 1408, 2546],
         "dataDimensions_µm": [50688, 50688, 91656],
         "thumbnailType": "1H",
-        "thumbnailName": ["44_1H.png"],
+        "thumbnailName": ["83_1H.webp"],
         "scanParameters": {
             "pixel_size": "36um",
             "frame_binning": "1",
@@ -3387,7 +3394,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3416,7 +3423,7 @@
         "dataDimensions_px": [1408, 1408, 2546],
         "dataDimensions_µm": [50688, 50688, 91656],
         "thumbnailType": "1H",
-        "thumbnailName": ["44_1H.png"],
+        "thumbnailName": ["84_1H.webp"],
         "scanParameters": {
             "pixel_size": "36um",
             "frame_binning": "1",
@@ -3427,7 +3434,7 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -3456,11 +3463,11 @@
         "dataDimensions_px": [5928, 3868],
         "dataDimensions_µm": [112.63, 73.49],
         "thumbnailType": "3H",
-        "thumbnailName": ["1_1H.png", "1_2H.png", "1_3H.png"],
+        "thumbnailName": ["85_1H.webp", "85_2H.webp", "85_3H.webp"],
         "scanParameters": {},
         "citations": [
             "S. J. Cooper et al, 'Methods—Kintsugi Imaging of Battery Electrodes: Distinguishing Pores from the Carbon Binder Domain using Pt Deposition', J. Electrochem. Soc. 169 070512, (2022)",
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Bartłomiej Winiarski",
         "licence": "CC-4.0",
@@ -3489,11 +3496,11 @@
         "dataDimensions_px": [6136, 4068],
         "dataDimensions_µm": [29.94, 19.53],
         "thumbnailType": "4H",
-        "thumbnailName": ["1_1H.png", "1_2H.png", "1_3H.png", "1_4H.png"],
+        "thumbnailName": ["86_1H.webp", "86_2H.webp", "86_3H.webp", "86_4H.webp"],
         "scanParameters": {},
         "citations": [
             "S. J. Cooper et al, 'Methods—Kintsugi Imaging of Battery Electrodes: Distinguishing Pores from the Carbon Binder Domain using Pt Deposition', J. Electrochem. Soc. 169 070512, (2022)",
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Bartłomiej Winiarski",
         "licence": "CC-4.0",
@@ -3522,10 +3529,10 @@
         "dataDimensions_px": [6144, 4376],
         "dataDimensions_µm": [319.49, 227.55],
         "thumbnailType": "3H",
-        "thumbnailName": ["45_1H.png", "45_2H.png", "45_3H.png"],
+        "thumbnailName": ["87_1H.webp", "87_2H.webp", "87_3H.webp"],
         "scanParameters": {},
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -3554,10 +3561,10 @@
         "dataDimensions_px": [3072, 2188],
         "dataDimensions_µm": [122.88, 87.52],
         "thumbnailType": "2H",
-        "thumbnailName": ["45_1H.png", "45_2H.png"],
+        "thumbnailName": ["88_1H.webp", "88_2H.webp"],
         "scanParameters": {},
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Jack Donoghue",
         "licence": "CC-4.0",
@@ -3586,7 +3593,7 @@
         "dataDimensions_px": ["-1", "-1"],
         "dataDimensions_µm": [1, 1],
         "thumbnailType": "3H",
-        "thumbnailName": ["46_1H.png", "46_2H.png", "46_3H.png"],
+        "thumbnailName": ["89_1H.webp", "89_2H.webp", "89_3H.webp"],
         "scanParameters": {
             "dataset depth (x-axis) (nm)": "59.9",
             "dataset depth (y-axis) (nm)": "62.1",
@@ -3600,7 +3607,7 @@
             "Detector event Total": "9111897"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Aigerim Omirkhan",
         "licence": "CC-4.0",
@@ -3629,7 +3636,7 @@
         "dataDimensions_px": [28000, 6636],
         "dataDimensions_µm": [840, 199.08],
         "thumbnailType": "3H",
-        "thumbnailName": ["47_1H.png", "47_2H.png", "47_3H.png"],
+        "thumbnailName": ["90_1H.webp", "90_2H.webp", "90_3H.webp"],
         "scanParameters": {
             "voltage": "2kV",
             "beam_current": "0.1nA",
@@ -3637,7 +3644,7 @@
             "working_distance": "7mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "WMG",
         "licence": "CC-4.0",
@@ -3666,7 +3673,7 @@
         "dataDimensions_px": [7511, 1979],
         "dataDimensions_µm": [1013.99, 267.17],
         "thumbnailType": "1H",
-        "thumbnailName": ["47_1H.png"],
+        "thumbnailName": ["91_1H.webp"],
         "scanParameters": {
             "voltage": "10kV",
             "beam_current": "1.6nA",
@@ -3674,7 +3681,7 @@
             "working_distance": "7mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "WMG",
         "licence": "CC-4.0",
@@ -3703,7 +3710,7 @@
         "dataDimensions_px": [33435, 5249],
         "dataDimensions_µm": [1003.05, 157.47],
         "thumbnailType": "3H",
-        "thumbnailName": ["48_1H.png", "48_2H.png", "48_3H.png"],
+        "thumbnailName": ["92_1H.webp", "92_2H.webp", "92_3H.webp"],
         "scanParameters": {
             "voltage": "2kV",
             "beam_current": "0.1nA",
@@ -3711,7 +3718,7 @@
             "working_distance": "7mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "WMG",
         "licence": "CC-4.0",
@@ -3740,7 +3747,7 @@
         "dataDimensions_px": [5734, 1432],
         "dataDimensions_µm": [688.08, 171.84],
         "thumbnailType": "4H",
-        "thumbnailName": ["48_1H.png", "48_2H.png", "48_3H.png", "48_4H.png"],
+        "thumbnailName": ["93_1H.webp", "93_2H.webp", "93_3H.webp", "93_4H.webp"],
         "scanParameters": {
             "voltage": "10kV",
             "beam_current": "3.2nA",
@@ -3748,7 +3755,7 @@
             "working_distance": "7mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "WMG",
         "licence": "CC-4.0",
@@ -3777,7 +3784,7 @@
         "dataDimensions_px": [599, 470],
         "dataDimensions_µm": [89.85, 70.5],
         "thumbnailType": "4H",
-        "thumbnailName": ["48_1H.png", "48_2H.png", "48_3H.png", "48_4H.png"],
+        "thumbnailName": ["94_1H.webp", "94_2H.webp", "94_3H.webp", "94_4H.webp"],
         "scanParameters": {
             "voltage": "20kV",
             "beam_current": "10nA",
@@ -3785,7 +3792,7 @@
             "working_distance": "20mm"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "WMG",
         "licence": "CC-4.0",
@@ -3814,7 +3821,7 @@
         "dataDimensions_px": [1024, 1024],
         "dataDimensions_µm": [47.35, 47.35],
         "thumbnailType": "1H",
-        "thumbnailName": ["49_1H.png"],
+        "thumbnailName": ["95_1H.webp"],
         "scanParameters": {
             "pixel_size": "46.24nm",
             "image_size": "1024",
@@ -3826,7 +3833,7 @@
             "I0_dark_exposure_time_ms": "4"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Yuta Kimura",
         "licence": "CC-4.0",
@@ -3899,7 +3906,7 @@
         "dataDimensions_px": [500, 512, 510],
         "dataDimensions_µm": [64, 65.54, 65.28],
         "thumbnailType": "1H",
-        "thumbnailName": ["50_1H.png"],
+        "thumbnailName": ["96_1H.webp"],
         "scanParameters": {
             "pixel_size": "128nm",
             "Magnification": "20x",
@@ -3910,7 +3917,7 @@
             "voltage": "35kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "EIL",
         "licence": "CC-4.0",
@@ -3939,7 +3946,7 @@
         "dataDimensions_px": [888, 1024, 1018],
         "dataDimensions_µm": [56.83, 65.54, 65.15],
         "thumbnailType": "1H",
-        "thumbnailName": ["51_1H.png"],
+        "thumbnailName": ["97_1H.webp"],
         "scanParameters": {
             "pixel_size": "64nm",
             "Magnification": "20x",
@@ -3950,7 +3957,7 @@
             "voltage": "35kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "EIL",
         "licence": "CC-4.0",
@@ -3979,7 +3986,7 @@
         "dataDimensions_px": [512, 512, 100],
         "dataDimensions_µm": [51.2, 51.2, 10],
         "thumbnailType": "3H",
-        "thumbnailName": ["52_1H.png", "52_2H.png", "52_3H.png"],
+        "thumbnailName": ["98_1H.webp", "98_2H.webp", "98_3H.webp"],
         "scanParameters": {
             "pixel_size": "0.1um",
             "frame_binning": "1",
@@ -3987,7 +3994,7 @@
             "voltage": "20kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -4117,7 +4124,7 @@
         "dataDimensions_px": [" 1024", 768],
         "dataDimensions_µm": [8.09, 6.07],
         "thumbnailType": "4H",
-        "thumbnailName": ["53_1H.png", "53_2H.png", "53_3H.png", "53_4H.png"],
+        "thumbnailName": ["99_1H.webp", "99_2H.webp", "99_3H.webp", "99_4H.webp"],
         "scanParameters": {
             "Dwell_time": "1.00 µs per pixel",
             "Frame_time": "1.18s",
@@ -4125,9 +4132,9 @@
             "voltage": "300kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint",
-            "N. Mulcahy et al, 'Degradation and SEI Evolution in Alloy Anodes Revealed by Correlative Liquid-Cell Electrochemistry and Cryogenic Microscopy', arXiv preprint",
-            "N. Mulcahy et al, 'A Workflow for Correlative in-situ Nano-chip Liquid Cell Transmission Electron Microscopy and Atom Probe Tomography Enabled by Cryogenic Plasma Focused Ion Beam', arXiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)",
+            "N. Mulcahy et al, 'Degradation and SEI Evolution in Alloy Anodes Revealed by Correlative Liquid-Cell Electrochemistry and Cryogenic Microscopy', arXiv preprint, (2025)",
+            "N. Mulcahy et al, 'A Workflow for Correlative in-situ Nano-chip Liquid Cell Transmission Electron Microscopy and Atom Probe Tomography Enabled by Cryogenic Plasma Focused Ion Beam', arXiv preprint, (2025)"
         ],
         "contributors": "Shelly Conroy",
         "licence": "CC-4.0",
@@ -4156,14 +4163,14 @@
         "dataDimensions_px": ["-1", "-1"],
         "dataDimensions_µm": [1, 1],
         "thumbnailType": "2H",
-        "thumbnailName": ["54_1H.png", "54_2H.png"],
+        "thumbnailName": ["100_1H.webp", "100_2H.webp"],
         "scanParameters": {
             "Acquisition_time": "0.1s",
             "EDX_spectra_acquisition_time": "30",
             "Accelerating_voltage": "200kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "John Morley",
         "licence": "CC-4.0",
@@ -4192,14 +4199,14 @@
         "dataDimensions_px": ["-1", "-1"],
         "dataDimensions_µm": [1, 1],
         "thumbnailType": "3H",
-        "thumbnailName": ["55_1H.png", "55_2H.png", "55_3H.png"],
+        "thumbnailName": ["101_1H.webp", "101_2H.webp", "101_3H.webp"],
         "scanParameters": {
             "Acquisition_time": "0.1s",
             "EDX_spectra_acquisition_time": "30",
             "Accelerating_voltage": "200kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "John Morley",
         "licence": "CC-4.0",
@@ -4228,13 +4235,13 @@
         "dataDimensions_px": [274, 251],
         "dataDimensions_µm": [0.38, 0.35],
         "thumbnailType": "3H",
-        "thumbnailName": ["55_1H.png", "55_2H.png", "55_3H.png"],
+        "thumbnailName": ["102_1H.webp", "102_2H.webp", "102_3H.webp"],
         "scanParameters": {
             "EDX_map_acquisition_time": "600s",
             "Accelerating_voltage": "200kV"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "John Morley",
         "licence": "CC-4.0",
@@ -4263,7 +4270,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["56_1H.png"],
+        "thumbnailName": ["103_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4274,7 +4281,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4303,7 +4310,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["56_1H.png"],
+        "thumbnailName": ["104_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4314,7 +4321,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4343,7 +4350,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["57_1H.png"],
+        "thumbnailName": ["105_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4354,7 +4361,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4383,7 +4390,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["57_1H.png"],
+        "thumbnailName": ["106_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4394,7 +4401,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4423,7 +4430,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["58_1H.png"],
+        "thumbnailName": ["107_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4434,7 +4441,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4463,7 +4470,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["58_1H.png"],
+        "thumbnailName": ["108_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4474,7 +4481,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4503,7 +4510,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["59_1H.png"],
+        "thumbnailName": ["109_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4514,7 +4521,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4543,7 +4550,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["59_1H.png"],
+        "thumbnailName": ["110_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4554,7 +4561,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4583,7 +4590,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["60_1H.png"],
+        "thumbnailName": ["111_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4594,7 +4601,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4623,7 +4630,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["60_1H.png"],
+        "thumbnailName": ["112_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4634,7 +4641,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4663,7 +4670,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["61_1H.png"],
+        "thumbnailName": ["113_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4674,7 +4681,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4703,7 +4710,7 @@
         "dataDimensions_px": [2160, 2160, 2560],
         "dataDimensions_µm": [17085.6, 17085.6, 20249.6],
         "thumbnailType": "1H",
-        "thumbnailName": ["61_1H.png"],
+        "thumbnailName": ["114_1H.webp"],
         "scanParameters": {
             "pixel_size": "7.91um",
             "flats": "50",
@@ -4714,7 +4721,7 @@
             "exposure_time": "8ms"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "Antony Vamvakeros",
         "licence": "CC-4.0",
@@ -4743,7 +4750,7 @@
         "dataDimensions_px": [503, 511, 670],
         "dataDimensions_µm": [64.38, 65.41, 85.76],
         "thumbnailType": "2H",
-        "thumbnailName": ["62_1H.png", "62_2H.png"],
+        "thumbnailName": ["115_1H.webp", "115_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -4754,7 +4761,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -4783,7 +4790,7 @@
         "dataDimensions_px": [498, 510, 1077],
         "dataDimensions_µm": [63.74, 65.28, 137.86],
         "thumbnailType": "2H",
-        "thumbnailName": ["63_1H.png", "63_2H.png"],
+        "thumbnailName": ["116_1H.webp", "116_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -4794,7 +4801,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -4823,7 +4830,7 @@
         "dataDimensions_px": [506, 515, 940],
         "dataDimensions_µm": [64.77, 65.92, 120.32],
         "thumbnailType": "2H",
-        "thumbnailName": ["64_1H.png", "64_2H.png"],
+        "thumbnailName": ["117_1H.webp", "117_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -4834,7 +4841,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -4863,7 +4870,7 @@
         "dataDimensions_px": [491, 510, 905],
         "dataDimensions_µm": [62.85, 65.28, 115.84],
         "thumbnailType": "2H",
-        "thumbnailName": ["65_1H.png", "65_2H.png"],
+        "thumbnailName": ["118_1H.webp", "118_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -4874,7 +4881,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -4903,7 +4910,7 @@
         "dataDimensions_px": [504, 507, 512],
         "dataDimensions_µm": [64.51, 64.9, 65.54],
         "thumbnailType": "2H",
-        "thumbnailName": ["66_1H.png", "66_2H.png"],
+        "thumbnailName": ["119_1H.webp", "119_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -4914,7 +4921,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -4943,7 +4950,7 @@
         "dataDimensions_px": [496, 510, 512],
         "dataDimensions_µm": [63.49, 65.28, 65.54],
         "thumbnailType": "2H",
-        "thumbnailName": ["67_1H.png", "67_2H.png"],
+        "thumbnailName": ["120_1H.webp", "120_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -4954,7 +4961,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -4983,7 +4990,7 @@
         "dataDimensions_px": [504, 508, 512],
         "dataDimensions_µm": [64.51, 65.02, 65.54],
         "thumbnailType": "2H",
-        "thumbnailName": ["68_1H.png", "68_2H.png"],
+        "thumbnailName": ["121_1H.webp", "121_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -4994,7 +5001,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -5023,7 +5030,7 @@
         "dataDimensions_px": [504, 511, 720],
         "dataDimensions_µm": [64.51, 65.41, 92.16],
         "thumbnailType": "2H",
-        "thumbnailName": ["69_1H.png", "69_2H.png"],
+        "thumbnailName": ["122_1H.webp", "122_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -5034,7 +5041,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -5063,7 +5070,7 @@
         "dataDimensions_px": [504, 512, 704],
         "dataDimensions_µm": [64.51, 65.54, 90.11],
         "thumbnailType": "2H",
-        "thumbnailName": ["70_1H.png", "70_2H.png"],
+        "thumbnailName": ["123_1H.webp", "123_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -5074,7 +5081,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -5103,7 +5110,7 @@
         "dataDimensions_px": [504, 511, 792],
         "dataDimensions_µm": [64.51, 65.41, 101.38],
         "thumbnailType": "2H",
-        "thumbnailName": ["71_1H.png", "71_2H.png"],
+        "thumbnailName": ["124_1H.webp", "124_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -5114,7 +5121,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -5143,7 +5150,7 @@
         "dataDimensions_px": [506, 551, 3006],
         "dataDimensions_µm": [64.77, 70.53, 384.77],
         "thumbnailType": "2H",
-        "thumbnailName": ["72_1H.png", "72_2H.png"],
+        "thumbnailName": ["125_1H.webp", "125_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -5154,7 +5161,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -5183,7 +5190,7 @@
         "dataDimensions_px": [563, 661, 2175],
         "dataDimensions_µm": [72.06, 84.61, 278.4],
         "thumbnailType": "2H",
-        "thumbnailName": ["73_1H.png", "73_2H.png"],
+        "thumbnailName": ["126_1H.webp", "126_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -5194,7 +5201,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -5223,7 +5230,7 @@
         "dataDimensions_px": [520, 572, 2176],
         "dataDimensions_µm": [66.56, 73.22, 278.53],
         "thumbnailType": "2H",
-        "thumbnailName": ["74_1H.png", "74_2H.png"],
+        "thumbnailName": ["127_1H.webp", "127_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -5234,7 +5241,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
@@ -5263,7 +5270,7 @@
         "dataDimensions_px": [499, 511, 649],
         "dataDimensions_µm": [63.87, 65.41, 83.07],
         "thumbnailType": "2H",
-        "thumbnailName": ["75_1H.png", "75_2H.png"],
+        "thumbnailName": ["128_1H.webp", "128_2H.webp"],
         "scanParameters": {
             "pixel_size": "0.128um",
             "frame_binning": "2",
@@ -5274,7 +5281,7 @@
             "voltage": "NA"
         },
         "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint"
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
         ],
         "contributors": "NREL",
         "licence": "CC-4.0",
