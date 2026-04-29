@@ -25,9 +25,6 @@ jobs:
             - name: Install dependencies
               run: yarn install --immutable
 
-            - name: Setup Pages
-              uses: actions/configure-pages@v4
-
             - name: Prep secrets
               run: |
                   mkdir -p auth
@@ -36,6 +33,9 @@ jobs:
 
             - name: Update images
               run: yarn tsx scripts/updateImages.ts ${DRIVE_URL}
+
+            - name: Setup Pages
+              uses: actions/configure-pages@v4
 
             - name: Build
               run: yarn build
