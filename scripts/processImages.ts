@@ -6,8 +6,8 @@ import sharp from "sharp";
 
 import {DriveFileAndData, DriveFolderAndData} from "./driveHelpers";
 
-const THUMB_SIZE = 300;
-const MODAL_SIZE = 600;
+const THUMB_SIZE = 250;
+const MODAL_SIZE = 500;
 
 type CropDims = {left: number; top: number; width: number; height: number};
 
@@ -44,8 +44,12 @@ export async function processDriveFolderAndData(
 ): Promise<DriveFolderAndData> {
     const processedFiles: DriveFileAndData[] = [];
     let imgIdx = 1;
-    for (const file of folder.files) {
-        let img = sharp(Buffer.from(file.buffer));
+    const sortedFiles = folder.files.sort((a, b) =>
+        a.name.localeCompare(b.name, undefined, {numeric: true})
+    );
+
+    for (const file of sortedFiles) {
+        let img = sharp(Buffer.from(file.buffer)).normalise();
 
         // Greyscale conversion (if single channel)
         const info = await img.metadata();
@@ -86,9 +90,7 @@ export async function processDriveFolderAndData(
     return {
         id: folder.id,
         name: folder.name,
-        files: processedFiles.sort((a, b) =>
-            a.name.localeCompare(b.name, undefined, {numeric: true})
-        )
+        files: processedFiles
     };
 }
 

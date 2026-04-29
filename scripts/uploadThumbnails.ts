@@ -2,6 +2,8 @@ import {downloadDriveFolderFilesAsData, getAuthClient, listDriveImages} from "./
 import {processDriveFolderAndData, writeBufferToFile} from "./processImages";
 import {listR2DriveFolders, uploadDriveFolderAndDataToR2} from "./r2Helpers";
 
+const UPLOAD_ALL = true; // Set to true to upload all folders, even if they exist on R2 with the same number of files
+
 async function main() {
     const [, , googleDriveUrl] = process.argv;
     if (!googleDriveUrl) {
@@ -18,14 +20,13 @@ async function main() {
 
     const client = await getAuthClient();
 
-    console.log("Listing images in folder:", driveId);
     const driveFiles = await listDriveImages(driveId, client);
     const r2Files = await listR2DriveFolders("modal/");
-    console.log(r2Files);
 
-    const foldersToDownload = driveFiles
+    let foldersToDownload = driveFiles
         .filter((driveFolder) => {
             const r2Folder = r2Files.find((r2) => r2.name === driveFolder.name);
+            if (UPLOAD_ALL) return true; // Upload all folders regardless of R2 state
             if (!r2Folder) return true; // Folder missing in R2, needs download
             return (driveFolder.files?.length || 0) !== (r2Folder.files?.length || 0);
         })
