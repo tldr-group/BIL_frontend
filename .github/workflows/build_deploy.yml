@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
     push:
-        branches: ["none"] # TODO: revert this
+        branches: ["main"]
 
 permissions:
     contents: read
@@ -27,6 +27,15 @@ jobs:
 
             - name: Setup Pages
               uses: actions/configure-pages@v4
+
+            - name: Prep secrets
+              run: |
+                  mkdir -p auth
+                  echo "${{ secrets.R2_B64 }}" | base64 -d > auth/r2.json
+                  echo "${{ secrets.SERVICE_WORKER_B64 }}" | base64 -d > auth/service-worker.json
+
+            - name: Update images
+              run: yarn tsx scripts/updateImages.ts ${DRIVE_URL}
 
             - name: Build
               run: yarn build
