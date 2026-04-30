@@ -31,6 +31,9 @@ jobs:
               env:
                   SHEET_URL: ${{ secrets.SHEET_URL }}
 
+            - name: Format updated JSON
+              run: yarn prettier --write src/assets/data.json
+
             - name: Commit and push changes
               run: |
                   git config user.name "github-actions[bot]"

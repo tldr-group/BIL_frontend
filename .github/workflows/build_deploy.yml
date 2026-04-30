@@ -7,6 +7,7 @@ on:
             - "*.md"
             - "*.txt"
             - "scripts/**"
+            - .github/workflows/on_spreadheet_update.yml
 
 permissions:
     contents: read
