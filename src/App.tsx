@@ -109,10 +109,7 @@ export const App: FC = () => {
             <Outlet />
             {state?.background && (
                 <Routes>
-                    <Route
-                        path="/search/:id"
-                        element={<ScanModal show={true} onClose={goBack} />}
-                    />
+                    <Route path="search/:id" element={<ScanModal show={true} onClose={goBack} />} />
                 </Routes>
             )}
             {/* Contribute Modal */}

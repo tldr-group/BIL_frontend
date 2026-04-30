@@ -190,7 +190,6 @@ async function main() {
     const scans: ScanDetails[] = [];
     const errors: {row: number; error: any; data: any}[] = [];
     records.forEach((row, idx) => {
-        console.log("Processing row:", row);
         // Convert fields to correct types
         const parsedRow = parseRow(row);
         const result = ScanDetailsSchema.safeParse(parsedRow);

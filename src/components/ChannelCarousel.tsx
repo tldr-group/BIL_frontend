@@ -19,7 +19,6 @@ const ChannelCarousel: FC<ChannelCarouselProps> = ({
     const [imgStyle, setImgStyle] = useState<CSSProperties>({});
 
     const images = thumbnailName.map((name) => `${IMG_URL}/${rootDir}/${scanID}/${name}`);
-    console.log("ChannelCarousel images:", images);
 
     // Adjust image style for best fit and aspect ratio
     useEffect(() => {

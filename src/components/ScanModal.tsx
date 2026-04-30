@@ -20,10 +20,9 @@ const ScanModal: FC<ScanModalProps> = ({show, scan: propScan, onClose}) => {
     const appContext = useContext(AppContext);
     const scanData = appContext?.scanData[0] || [];
     const [scan, setScan] = useState<ScanDetails | null>(propScan ?? null);
-
     // If scan is not provided, look it up from scanData using id
     useEffect(() => {
-        if (!scan && id && scanData.length > 0) {
+        if (id && scanData.length > 0) {
             const found = scanData.find((s) => String(s.scanID) === id);
             if (found) setScan(found);
         }
