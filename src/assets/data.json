@@ -5293,45 +5293,5 @@
             "reconstructedZenodoLinks": ["https://doi.org/10.5281/zenodo.18602396"],
             "reconstructedZenodoLabels": [""]
         }
-    },
-    {
-        "scanID": 129,
-        "sampleID": 76,
-        "sampleName": "Test",
-        "chemistry": "NMC812",
-        "electrolyteType": "LIQUID",
-        "cellType": "SECONDARY",
-        "cellFormat": "UNKNOWN",
-        "sampleDescription": "Nano-CT of pristine NMC 811 taken in large field of view absorption mode.",
-        "scanType": "ELECTRODE",
-        "scanModality": "LAB_NANO_XCT",
-        "instrument": "Zeiss Xradia Ultra 811",
-        "pixelSize_µm": [0.128, 0.128, 0.129],
-        "dataDimensions_px": [499, 511, 650],
-        "dataDimensions_µm": [63.87, 65.41, 83.85],
-        "thumbnailType": "1H",
-        "thumbnailName": ["129_1H.webp"],
-        "scanParameters": {
-            "pixel_size": "0.128um",
-            "frame_binning": "2",
-            "integration_time": "20s",
-            "projections": "901",
-            "angular_range": "180",
-            "current": "NA",
-            "voltage": "NA"
-        },
-        "citations": [
-            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
-        ],
-        "contributors": "NREL",
-        "licence": "CC-4.0",
-        "zenodoLinks": {
-            "rawZenodoLinks": [""],
-            "rawZenodoLabels": [""],
-            "processedZenodoLinks": [""],
-            "processedZenodoLabels": [""],
-            "reconstructedZenodoLinks": ["https://doi.org/10.5281/zenodo.18602397"],
-            "reconstructedZenodoLabels": [""]
-        }
     }
 ]
