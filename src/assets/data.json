@@ -3089,7 +3089,7 @@
     },
     {
         "scanID": 76,
-        "sampleID": 42,
+        "sampleID": 41,
         "sampleName": "18650 Na-ion 1300 mAh (HAKADI) battery",
         "chemistry": "NA-ION",
         "electrolyteType": "LIQUID",
