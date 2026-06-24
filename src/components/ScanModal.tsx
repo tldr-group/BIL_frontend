@@ -1,5 +1,5 @@
 import {FC, useState, useEffect, Fragment, useContext} from "react";
-import {useParams} from "react-router-dom";
+import {useParams, Link} from "react-router-dom";
 import AppContext from "../interfaces/types";
 import {isArrayEmpty} from "../interfaces/helpers";
 import {Modal, Button, Accordion, Table, Form} from "react-bootstrap";
@@ -77,9 +77,9 @@ const ScanModal: FC<ScanModalProps> = ({show, scan: propScan, onClose}) => {
                 {valid.map((v, i) => {
                     return (
                         <>
-                            <a href={`${v.scanID}`}>
+                            <Link to={`/search/${v.scanID}`}>
                                 {v.sampleName} ({v.scanID})
-                            </a>
+                            </Link>
                             {i < valid.length - 1 && ", "}
                         </>
                     );
