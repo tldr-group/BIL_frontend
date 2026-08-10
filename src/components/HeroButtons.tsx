@@ -175,7 +175,7 @@ export const FloatingButtons: React.FC = () => {
                 />
             )}
 
-            {/* 2. Blue Select/Deselect all filtered entries (always present, above gallery/home) */}
+            {/* 2. Select/Deselect all filtered entries (always present, white button, blue tick toggle) */}
             <FloatingButton
                 onClick={handleToggleSelectAll}
                 ariaLabel={
@@ -183,11 +183,6 @@ export const FloatingButtons: React.FC = () => {
                         ? `Deselect all filtered entries (${matchingIds.length})`
                         : `Select all filtered entries (${matchingIds.length})`
                 }
-                style={{
-                    background: "linear-gradient(135deg, #0d6efd 0%, #1d4ed8 100%)",
-                    boxShadow: "0 4px 14px rgba(13,110,253,0.45)",
-                    border: "2px solid #ffffff"
-                }}
                 icon={
                     allFilteredSelected ? (
                         <svg
@@ -195,13 +190,13 @@ export const FloatingButtons: React.FC = () => {
                             height="22"
                             viewBox="0 0 24 24"
                             fill="none"
-                            stroke="#ffffff"
+                            stroke="#0d6efd"
                             strokeWidth="2.3"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                         >
-                            <rect x="3" y="3" width="18" height="18" rx="4" fill="rgba(255,255,255,0.25)" />
-                            <polyline points="9 11 12 14 22 4" stroke="#ffffff" strokeWidth="2.8" />
+                            <rect x="3" y="3" width="18" height="18" rx="4" fill="#eff6ff" stroke="#0d6efd" strokeWidth="2" />
+                            <polyline points="9 11 12 14 22 4" stroke="#0d6efd" strokeWidth="2.8" />
                         </svg>
                     ) : (
                         <svg
@@ -209,13 +204,12 @@ export const FloatingButtons: React.FC = () => {
                             height="22"
                             viewBox="0 0 24 24"
                             fill="none"
-                            stroke="#ffffff"
-                            strokeWidth="2.2"
+                            stroke="#94a3b8"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                         >
-                            <rect x="3" y="3" width="18" height="18" rx="4" />
-                            <polyline points="9 11 12 14 22 4" stroke="rgba(255,255,255,0.5)" />
+                            <rect x="3" y="3" width="18" height="18" rx="4" stroke="#94a3b8" />
                         </svg>
                     )
                 }

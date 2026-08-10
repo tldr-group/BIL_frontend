@@ -131,7 +131,10 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                 margin: 0
             }}
         >
-            <Modal.Header closeButton style={{backgroundColor: "#f8fafc", borderBottom: "1px solid #e2e8f0"}}>
+            <Modal.Header
+                closeButton
+                style={{backgroundColor: "#f8fafc", borderBottom: "1px solid #e2e8f0"}}
+            >
                 <div style={{display: "flex", alignItems: "center", gap: 12}}>
                     <div
                         style={{
@@ -162,11 +165,19 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                         </svg>
                     </div>
                     <div>
-                        <Modal.Title style={{fontWeight: 700, fontSize: "1.35rem", margin: 0, color: "#1e293b"}}>
+                        <Modal.Title
+                            style={{
+                                fontWeight: 700,
+                                fontSize: "1.35rem",
+                                margin: 0,
+                                color: "#1e293b"
+                            }}
+                        >
                             Bulk Export &amp; Download Script
                         </Modal.Title>
                         <div style={{fontSize: "0.85rem", color: "#64748b", marginTop: 2}}>
-                            Generate custom automated download script for {selectedScans.length} selected dataset{selectedScans.length > 1 ? "s" : ""}
+                            Generate custom automated download script for {selectedScans.length}{" "}
+                            selected dataset{selectedScans.length > 1 ? "s" : ""}
                         </div>
                     </div>
                 </div>
@@ -175,7 +186,9 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
             <Modal.Body style={{padding: "24px", maxHeight: "80vh", overflowY: "auto"}}>
                 {selectedScans.length === 0 ? (
                     <div style={{textAlign: "center", padding: "40px 20px", color: "#64748b"}}>
-                        <p style={{fontSize: "1.1rem", marginBottom: 12}}>No entries currently selected.</p>
+                        <p style={{fontSize: "1.1rem", marginBottom: 12}}>
+                            No entries currently selected.
+                        </p>
                         <Button variant="primary" onClick={onClose}>
                             Browse &amp; Select Scans
                         </Button>
@@ -199,7 +212,14 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                     backgroundColor: "#f8fafc"
                                 }}
                             >
-                                <div style={{fontWeight: 700, fontSize: "0.95rem", color: "#1e293b", marginBottom: 12}}>
+                                <div
+                                    style={{
+                                        fontWeight: 700,
+                                        fontSize: "0.95rem",
+                                        color: "#1e293b",
+                                        marginBottom: 12
+                                    }}
+                                >
                                     1. Data Categories
                                 </div>
 
@@ -212,8 +232,13 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                         label={
                                             <span style={{fontSize: "0.9rem", color: "#334155"}}>
                                                 <strong>Raw Data</strong>{" "}
-                                                <Badge bg="secondary" pill style={{fontSize: "0.75em", marginLeft: 4}}>
-                                                    {linkCounts.raw} scan{linkCounts.raw !== 1 ? "s" : ""}
+                                                <Badge
+                                                    bg="secondary"
+                                                    pill
+                                                    style={{fontSize: "0.75em", marginLeft: 4}}
+                                                >
+                                                    {linkCounts.raw} scan
+                                                    {linkCounts.raw !== 1 ? "s" : ""}
                                                 </Badge>
                                             </span>
                                         }
@@ -226,8 +251,13 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                         label={
                                             <span style={{fontSize: "0.9rem", color: "#334155"}}>
                                                 <strong>Reconstructed Data</strong>{" "}
-                                                <Badge bg="secondary" pill style={{fontSize: "0.75em", marginLeft: 4}}>
-                                                    {linkCounts.reconstructed} scan{linkCounts.reconstructed !== 1 ? "s" : ""}
+                                                <Badge
+                                                    bg="secondary"
+                                                    pill
+                                                    style={{fontSize: "0.75em", marginLeft: 4}}
+                                                >
+                                                    {linkCounts.reconstructed} scan
+                                                    {linkCounts.reconstructed !== 1 ? "s" : ""}
                                                 </Badge>
                                             </span>
                                         }
@@ -240,15 +270,22 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                         label={
                                             <span style={{fontSize: "0.9rem", color: "#334155"}}>
                                                 <strong>Processed Data</strong>{" "}
-                                                <Badge bg="secondary" pill style={{fontSize: "0.75em", marginLeft: 4}}>
-                                                    {linkCounts.processed} scan{linkCounts.processed !== 1 ? "s" : ""}
+                                                <Badge
+                                                    bg="secondary"
+                                                    pill
+                                                    style={{fontSize: "0.75em", marginLeft: 4}}
+                                                >
+                                                    {linkCounts.processed} scan
+                                                    {linkCounts.processed !== 1 ? "s" : ""}
                                                 </Badge>
                                             </span>
                                         }
                                     />
                                 </div>
                                 {noDataTypesSelected && (
-                                    <div style={{color: "#dc2626", fontSize: "0.8rem", marginTop: 8}}>
+                                    <div
+                                        style={{color: "#dc2626", fontSize: "0.8rem", marginTop: 8}}
+                                    >
                                         Please select at least one data category.
                                     </div>
                                 )}
@@ -263,11 +300,24 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                     backgroundColor: "#f8fafc"
                                 }}
                             >
-                                <div style={{fontWeight: 700, fontSize: "0.95rem", color: "#1e293b", marginBottom: 12}}>
+                                <div
+                                    style={{
+                                        fontWeight: 700,
+                                        fontSize: "0.95rem",
+                                        color: "#1e293b",
+                                        marginBottom: 12
+                                    }}
+                                >
                                     2. Save Path &amp; Organization
                                 </div>
                                 <Form.Group className="mb-2">
-                                    <Form.Label style={{fontSize: "0.8rem", color: "#64748b", marginBottom: 4}}>
+                                    <Form.Label
+                                        style={{
+                                            fontSize: "0.8rem",
+                                            color: "#64748b",
+                                            marginBottom: 4
+                                        }}
+                                    >
                                         Destination Directory:
                                     </Form.Label>
                                     <Form.Control
@@ -301,7 +351,14 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                     backgroundColor: "#f8fafc"
                                 }}
                             >
-                                <div style={{fontWeight: 700, fontSize: "0.95rem", color: "#1e293b", marginBottom: 12}}>
+                                <div
+                                    style={{
+                                        fontWeight: 700,
+                                        fontSize: "0.95rem",
+                                        color: "#1e293b",
+                                        marginBottom: 12
+                                    }}
+                                >
                                     3. Script Language
                                 </div>
                                 <div style={{display: "flex", flexDirection: "column", gap: 10}}>
@@ -312,8 +369,12 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                             alignItems: "center",
                                             padding: "8px 12px",
                                             borderRadius: 8,
-                                            border: scriptLanguage === "python" ? "2px solid #0d6efd" : "1px solid #cbd5e1",
-                                            backgroundColor: scriptLanguage === "python" ? "#eff6ff" : "#fff",
+                                            border:
+                                                scriptLanguage === "python"
+                                                    ? "2px solid #0d6efd"
+                                                    : "1px solid #cbd5e1",
+                                            backgroundColor:
+                                                scriptLanguage === "python" ? "#eff6ff" : "#fff",
                                             cursor: "pointer",
                                             transition: "all 0.15s ease"
                                         }}
@@ -327,11 +388,14 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                             style={{marginRight: 8}}
                                         />
                                         <div>
-                                            <div style={{fontWeight: 600, fontSize: "0.9rem", color: "#1e293b"}}>
+                                            <div
+                                                style={{
+                                                    fontWeight: 600,
+                                                    fontSize: "0.9rem",
+                                                    color: "#1e293b"
+                                                }}
+                                            >
                                                 Python 3 (.py)
-                                            </div>
-                                            <div style={{fontSize: "0.75rem", color: "#64748b"}}>
-                                                Self-contained, progress bar &amp; MD5 verification
                                             </div>
                                         </div>
                                     </div>
@@ -343,8 +407,12 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                             alignItems: "center",
                                             padding: "8px 12px",
                                             borderRadius: 8,
-                                            border: scriptLanguage === "bash" ? "2px solid #0d6efd" : "1px solid #cbd5e1",
-                                            backgroundColor: scriptLanguage === "bash" ? "#eff6ff" : "#fff",
+                                            border:
+                                                scriptLanguage === "bash"
+                                                    ? "2px solid #0d6efd"
+                                                    : "1px solid #cbd5e1",
+                                            backgroundColor:
+                                                scriptLanguage === "bash" ? "#eff6ff" : "#fff",
                                             cursor: "pointer",
                                             transition: "all 0.15s ease"
                                         }}
@@ -358,11 +426,14 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                             style={{marginRight: 8}}
                                         />
                                         <div>
-                                            <div style={{fontWeight: 600, fontSize: "0.9rem", color: "#1e293b"}}>
+                                            <div
+                                                style={{
+                                                    fontWeight: 600,
+                                                    fontSize: "0.9rem",
+                                                    color: "#1e293b"
+                                                }}
+                                            >
                                                 Bash (.sh)
-                                            </div>
-                                            <div style={{fontSize: "0.75rem", color: "#64748b"}}>
-                                                cURL-based streaming with automatic resume
                                             </div>
                                         </div>
                                     </div>
@@ -374,13 +445,26 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>
-                                    <div style={{display: "flex", alignItems: "center", gap: 8, width: "100%"}}>
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            alignItems: "center",
+                                            gap: 8,
+                                            width: "100%"
+                                        }}
+                                    >
                                         <span style={{fontWeight: 600}}>
                                             Selected Scans ({selectedScans.length})
                                         </span>
                                     </div>
                                 </Accordion.Header>
-                                <Accordion.Body style={{maxHeight: 200, overflowY: "auto", padding: "12px 16px"}}>
+                                <Accordion.Body
+                                    style={{
+                                        maxHeight: 200,
+                                        overflowY: "auto",
+                                        padding: "12px 16px"
+                                    }}
+                                >
                                     <div style={{display: "flex", flexDirection: "column", gap: 8}}>
                                         {selectedScans.map((scan) => (
                                             <div
@@ -395,11 +479,29 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                                     border: "1px solid #e2e8f0"
                                                 }}
                                             >
-                                                <div style={{display: "flex", alignItems: "center", gap: 10}}>
-                                                    <span style={{fontWeight: 700, fontSize: "0.85rem", color: "#64748b"}}>
+                                                <div
+                                                    style={{
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                        gap: 10
+                                                    }}
+                                                >
+                                                    <span
+                                                        style={{
+                                                            fontWeight: 700,
+                                                            fontSize: "0.85rem",
+                                                            color: "#64748b"
+                                                        }}
+                                                    >
                                                         #{scan.scanID}
                                                     </span>
-                                                    <span style={{fontWeight: 600, fontSize: "0.9rem", color: "#1e293b"}}>
+                                                    <span
+                                                        style={{
+                                                            fontWeight: 600,
+                                                            fontSize: "0.9rem",
+                                                            color: "#1e293b"
+                                                        }}
+                                                    >
                                                         {scan.sampleName}
                                                     </span>
                                                     <ModalityBadge
@@ -411,7 +513,10 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                                 <Button
                                                     variant="outline-danger"
                                                     size="sm"
-                                                    style={{fontSize: "0.75rem", padding: "2px 8px"}}
+                                                    style={{
+                                                        fontSize: "0.75rem",
+                                                        padding: "2px 8px"
+                                                    }}
                                                     onClick={() => handleRemoveScan(scan.scanID)}
                                                 >
                                                     Remove
@@ -435,7 +540,8 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                 }}
                             >
                                 <span style={{fontWeight: 700, fontSize: "1rem", color: "#1e293b"}}>
-                                    Generated {scriptLanguage === "python" ? "Python" : "Bash"} Download Script
+                                    Generated {scriptLanguage === "python" ? "Python" : "Bash"}{" "}
+                                    Download Script
                                 </span>
                             </div>
 
@@ -447,7 +553,8 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                     padding: 16,
                                     borderRadius: 8,
                                     fontSize: "0.82rem",
-                                    fontFamily: "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace",
+                                    fontFamily:
+                                        "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace",
                                     maxHeight: 280,
                                     overflowY: "auto",
                                     overflowX: "auto",

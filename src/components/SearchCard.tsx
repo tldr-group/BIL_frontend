@@ -65,8 +65,8 @@ const SearchCard: FC<SearchCardProps> = ({scan, isSelected = false, onToggleSele
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "stretch",
-                position: "relative",
-                transition: "border 0.2s ease, box-shadow 0.2s ease"
+                position: "relative"
+                // transition: "border 0.2s ease, box-shadow 0.2s ease"
             }}
         >
             {/* Styled Selection Checkbox */}
@@ -82,7 +82,7 @@ const SearchCard: FC<SearchCardProps> = ({scan, isSelected = false, onToggleSele
                 style={{
                     position: "absolute",
                     top: 10,
-                    left: 10,
+                    right: 10,
                     zIndex: 10,
                     width: 24,
                     height: 24,
@@ -98,7 +98,6 @@ const SearchCard: FC<SearchCardProps> = ({scan, isSelected = false, onToggleSele
                     cursor: "pointer",
                     padding: 0,
                     outline: "none",
-                    transition: "all 0.15s ease-in-out",
                     backdropFilter: "blur(4px)"
                 }}
             >
