@@ -178,6 +178,10 @@ export interface contextProps {
     showContributors: [showContributors: boolean, setShowContributors: (e: boolean) => void];
     showAbout: [showAbout: boolean, setShowAbout: (e: boolean) => void];
     isSearching: [isSearching: boolean, setIsSearching: (e: boolean) => void];
+    selectedScanIds: [
+        selectedScanIds: number[],
+        setSelectedScanIds: React.Dispatch<React.SetStateAction<number[]>>
+    ];
 }
 
 const AppContext = createContext<contextProps | null>(null);
