@@ -29,8 +29,7 @@ export const App: FC = () => {
         showContributors: [showContributors, setShowContributors],
         showAbout: [showAbout, setShowAbout],
         isSearching: [isSearching, setIsSearching],
-        selectedScanIds: [selectedScanIds, setSelectedScanIds],
-        showExport: [showExport, setShowExport]
+        selectedScanIds: [selectedScanIds, setSelectedScanIds]
     } = useContext(AppContext)!;
 
     const navigate = useNavigate();
@@ -38,7 +37,7 @@ export const App: FC = () => {
     // Memoize state, update when modal states change
     const state = useMemo(
         () => location.state as {background?: Location},
-        [location, showContribute, showContributors, showAbout, showExport]
+        [location, showContribute, showContributors, showAbout]
     );
 
     const goBack = () => {
@@ -139,8 +138,6 @@ export const App: FC = () => {
                 />
             )}
             {showAbout && <AboutModal show={showAbout} onClose={() => setShowAbout(false)} />}
-            {/* Bulk Export / Download Modal */}
-            {showExport && <ExportModal show={showExport} onClose={() => setShowExport(false)} />}
         </div>
     );
 };

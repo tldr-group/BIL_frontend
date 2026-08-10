@@ -182,7 +182,6 @@ export interface contextProps {
         selectedScanIds: number[],
         setSelectedScanIds: React.Dispatch<React.SetStateAction<number[]>>
     ];
-    showExport: [showExport: boolean, setShowExport: (e: boolean) => void];
 }
 
 const AppContext = createContext<contextProps | null>(null);

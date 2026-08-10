@@ -4,6 +4,7 @@ import {useNavigate} from "react-router-dom";
 import AppContext from "../interfaces/types";
 
 import {scanMatchesSearch} from "../interfaces/helpers";
+import ExportModal from "./ExportModal";
 
 type FloatingButtonProps = {
     iconPath?: string;
@@ -91,7 +92,6 @@ export const FloatingButtons: React.FC = () => {
     const {
         isSearching: [isSearching, setIsSearching],
         selectedScanIds: [selectedScanIds, setSelectedScanIds],
-        showExport: [, setShowExport],
         scanData: [scanData],
         searchText: [searchText],
         resRange: [resRange],
@@ -99,6 +99,12 @@ export const FloatingButtons: React.FC = () => {
         selectedModalities: [selectedModalities]
     } = useContext(AppContext)!;
     const navigate = useNavigate();
+
+    // Local state for opening/closing the export modal
+    const [showExportModal, setShowExportModal] = React.useState<boolean>(false);
+
+    // Computed property: export button is visible when at least 1 scan is selected
+    const isExportAvailable = selectedScanIds.length >= 1;
 
     const navButtonPath = isSearching ? "icons/home.png" : "icons/data.png";
     const label = isSearching ? "Home" : "Browse library";
@@ -145,10 +151,10 @@ export const FloatingButtons: React.FC = () => {
                 zIndex: 1000
             }}
         >
-            {/* 1. Circular Blue Bulk Download / Export Button (at top, when items selected) */}
-            {selectedScanIds.length > 0 && (
+            {/* 1. Circular Blue Bulk Download / Export Button (at top, computed when selectedScans.length >= 1) */}
+            {isExportAvailable && (
                 <FloatingButton
-                    onClick={() => setShowExport(true)}
+                    onClick={() => setShowExportModal(true)}
                     ariaLabel={`Export download script (${selectedScanIds.length} selected)`}
                     badge={selectedScanIds.length}
                     style={{
@@ -228,6 +234,11 @@ export const FloatingButtons: React.FC = () => {
                 onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
                 ariaLabel="Scroll to top"
             />
+
+            {/* Export Modal */}
+            {showExportModal && (
+                <ExportModal show={showExportModal} onClose={() => setShowExportModal(false)} />
+            )}
         </div>
     );
 };
