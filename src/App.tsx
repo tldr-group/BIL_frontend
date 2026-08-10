@@ -6,6 +6,7 @@ import ContributeModal from "./components/ContributeModal";
 
 import HeroFold from "./components/HeroFold";
 import ExampleCards from "./components/ExampleCard";
+import Updates from "./components/Updates";
 import SearchCard from "./components/SearchCard";
 import {Container} from "react-bootstrap";
 
@@ -82,7 +83,15 @@ export const App: FC = () => {
             <HeroFold searching={isSearching} />
             <FloatingButtons />
             <Routes location={state?.background || location}>
-                <Route path="" element={<ExampleCards />} />
+                <Route
+                    path=""
+                    element={
+                        <>
+                            <Updates />
+                            <ExampleCards />
+                        </>
+                    }
+                />
                 <Route path="home" element={<Navigate to="/" replace />} />
                 <Route
                     path="search"
