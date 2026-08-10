@@ -130,7 +130,7 @@ const HeroFold: FC<{searching: boolean}> = ({searching}) => {
                             >
                                 Battery Imaging Library
                             </h1>
-                            <div style={{marginTop: 8}}>
+                            <div style={{marginTop: 8, padding: isMobile() ? "0 16px" : "0 0"}}>
                                 <SearchBar variant="light" />
                             </div>
                         </div>
