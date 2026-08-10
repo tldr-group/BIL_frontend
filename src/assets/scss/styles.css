@@ -120,3 +120,26 @@ html {
   flex-direction: column;
   align-items: center;
 }
+
+/* --- Search Card & Selection Styles --- */
+.search-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.search-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.search-card.selected {
+  border-color: #0d6efd !important;
+  box-shadow: 0 4px 16px rgba(13, 110, 253, 0.25) !important;
+}
+
+.export-modal .modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+

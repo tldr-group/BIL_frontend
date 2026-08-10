@@ -15,6 +15,7 @@ import {scanMatchesSearch, smartShuffle} from "./interfaces/helpers";
 import ContributorModal from "./components/ContributorModal";
 import {FloatingButtons} from "./components/HeroButtons";
 import AboutModal from "./components/AboutModal";
+import ExportModal from "./components/ExportModal";
 
 export const App: FC = () => {
     const {
@@ -27,7 +28,9 @@ export const App: FC = () => {
         showContribute: [showContribute, setShowContribute],
         showContributors: [showContributors, setShowContributors],
         showAbout: [showAbout, setShowAbout],
-        isSearching: [isSearching, setIsSearching]
+        isSearching: [isSearching, setIsSearching],
+        selectedScanIds: [selectedScanIds, setSelectedScanIds],
+        showExport: [showExport, setShowExport]
     } = useContext(AppContext)!;
 
     const navigate = useNavigate();
@@ -35,7 +38,7 @@ export const App: FC = () => {
     // Memoize state, update when modal states change
     const state = useMemo(
         () => location.state as {background?: Location},
-        [location, showContribute, showContributors, showAbout]
+        [location, showContribute, showContributors, showAbout, showExport]
     );
 
     const goBack = () => {
@@ -43,6 +46,23 @@ export const App: FC = () => {
         setIsSearching(true);
         navigate("search");
     };
+
+    const handleToggleSelect = (scanID: number) => {
+        setSelectedScanIds((prev) =>
+            prev.includes(scanID) ? prev.filter((id) => id !== scanID) : [...prev, scanID]
+        );
+    };
+
+    // Filter and shuffle scans matching current search parameters
+    const matchingScans = useMemo(() => {
+        return scanData.filter((s) =>
+            scanMatchesSearch(s, searchText, resRange, sizeRange, selectedModalities)
+        );
+    }, [scanData, searchText, resRange, sizeRange, selectedModalities]);
+
+    const displayedScans = useMemo(() => {
+        return smartShuffle(matchingScans, ["scanModality", "sampleID"]);
+    }, [matchingScans]);
 
     // Determine if current route is '/search'
     useEffect(() => {
@@ -74,29 +94,20 @@ export const App: FC = () => {
                                     alignItems: "stretch"
                                 }}
                             >
-                                {smartShuffle(
-                                    scanData.filter((s) =>
-                                        scanMatchesSearch(
-                                            s,
-                                            searchText,
-                                            resRange,
-                                            sizeRange,
-                                            selectedModalities
-                                        )
-                                    ),
-                                    ["scanModality", "sampleID"]
-                                ).map((v, i) => (
+                                {displayedScans.map((v, i) => (
                                     <div
-                                        key={i}
+                                        key={v.scanID || i}
                                         onClick={() => {
-                                            {
-                                                setSelectedScan(v);
-                                                navigate(`search/${v.scanID}`);
-                                            }
+                                            setSelectedScan(v);
+                                            navigate(`search/${v.scanID}`);
                                         }}
                                         style={{cursor: "pointer"}}
                                     >
-                                        <SearchCard scan={v} />
+                                        <SearchCard
+                                            scan={v}
+                                            isSelected={selectedScanIds.includes(v.scanID)}
+                                            onToggleSelect={handleToggleSelect}
+                                        />
                                     </div>
                                 ))}
                             </div>
@@ -123,6 +134,8 @@ export const App: FC = () => {
                 />
             )}
             {showAbout && <AboutModal show={showAbout} onClose={() => setShowAbout(false)} />}
+            {/* Bulk Export / Download Modal */}
+            {showExport && <ExportModal show={showExport} onClose={() => setShowExport(false)} />}
         </div>
     );
 };

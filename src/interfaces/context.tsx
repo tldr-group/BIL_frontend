@@ -17,6 +17,8 @@ const AppContextProvider = (props: {
     const [showContributors, setShowContributors] = useState<boolean>(false);
     const [showAbout, setShowAbout] = useState<boolean>(false);
     const [isSearching, setIsSearching] = useState<boolean>(false);
+    const [selectedScanIds, setSelectedScanIds] = useState<number[]>([]);
+    const [showExport, setShowExport] = useState<boolean>(false);
     return (
         <AppContext.Provider
             value={{
@@ -29,7 +31,9 @@ const AppContextProvider = (props: {
                 showContribute: [showContribute, setShowContribute],
                 showContributors: [showContributors, setShowContributors],
                 showAbout: [showAbout, setShowAbout],
-                isSearching: [isSearching, setIsSearching]
+                isSearching: [isSearching, setIsSearching],
+                selectedScanIds: [selectedScanIds, setSelectedScanIds],
+                showExport: [showExport, setShowExport]
             }}
         >
             {props.children}
