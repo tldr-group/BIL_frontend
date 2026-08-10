@@ -1,5 +1,5 @@
 import {FC} from "react";
-import {MODALITY_TO_COLOUR, type ScanDetails} from "../interfaces/types";
+import {isMobile, MODALITY_TO_COLOUR, type ScanDetails} from "../interfaces/types";
 import type {Modality} from "../interfaces/types";
 import {renderDataDims, renderModality, renderSmallestPixelSize} from "../interfaces/helpers";
 
@@ -70,52 +70,54 @@ const SearchCard: FC<SearchCardProps> = ({scan, isSelected = false, onToggleSele
             }}
         >
             {/* Styled Selection Checkbox */}
-            <button
-                type="button"
-                aria-label={isSelected ? "Deselect scan" : "Select scan for bulk export"}
-                onClick={(e) => {
-                    e.stopPropagation();
-                    if (onToggleSelect) {
-                        onToggleSelect(scanID);
-                    }
-                }}
-                style={{
-                    position: "absolute",
-                    top: 10,
-                    right: 10,
-                    zIndex: 10,
-                    width: 24,
-                    height: 24,
-                    borderRadius: 6,
-                    border: isSelected ? "2px solid #0d6efd" : "2px solid #94a3b8",
-                    backgroundColor: isSelected ? "#0d6efd" : "rgba(255, 255, 255, 0.9)",
-                    boxShadow: isSelected
-                        ? "0 2px 6px rgba(13,110,253,0.4)"
-                        : "0 2px 5px rgba(0,0,0,0.18)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    cursor: "pointer",
-                    padding: 0,
-                    outline: "none",
-                    backdropFilter: "blur(4px)"
-                }}
-            >
-                {isSelected && (
-                    <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#ffffff"
-                        strokeWidth="3.2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    >
-                        <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                )}
-            </button>
+            {!isMobile() && (
+                <button
+                    type="button"
+                    aria-label={isSelected ? "Deselect scan" : "Select scan for bulk export"}
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        if (onToggleSelect) {
+                            onToggleSelect(scanID);
+                        }
+                    }}
+                    style={{
+                        position: "absolute",
+                        top: 10,
+                        right: 10,
+                        zIndex: 10,
+                        width: 24,
+                        height: 24,
+                        borderRadius: 6,
+                        border: isSelected ? "2px solid #0d6efd" : "2px solid #94a3b8",
+                        backgroundColor: isSelected ? "#0d6efd" : "rgba(255, 255, 255, 0.9)",
+                        boxShadow: isSelected
+                            ? "0 2px 6px rgba(13,110,253,0.4)"
+                            : "0 2px 5px rgba(0,0,0,0.18)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        cursor: "pointer",
+                        padding: 0,
+                        outline: "none",
+                        backdropFilter: "blur(4px)"
+                    }}
+                >
+                    {isSelected && (
+                        <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#ffffff"
+                            strokeWidth="3.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        >
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                    )}
+                </button>
+            )}
             <ChannelCarousel
                 thumbnailName={thumbnailName}
                 scanID={scanID}
