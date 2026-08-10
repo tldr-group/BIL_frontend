@@ -66,9 +66,14 @@ export const App: FC = () => {
 
     // Determine if current route is '/search'
     useEffect(() => {
-        if (location.pathname.startsWith("search")) {
+        if (location.pathname.includes("search")) {
             setIsSearching(true);
-        } else if (location.pathname === "" || location.pathname === "home") {
+        } else if (
+            location.pathname === "" ||
+            location.pathname === "/" ||
+            location.pathname === "home" ||
+            location.pathname === "/home"
+        ) {
             setIsSearching(false);
         }
     }, [location.pathname, setIsSearching]);

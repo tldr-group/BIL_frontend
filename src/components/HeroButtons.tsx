@@ -89,7 +89,7 @@ const FloatingButton: React.FC<FloatingButtonProps> = ({
 
 export const FloatingButtons: React.FC = () => {
     const {
-        isSearching: [isSearching],
+        isSearching: [isSearching, setIsSearching],
         selectedScanIds: [selectedScanIds, setSelectedScanIds],
         showExport: [, setShowExport],
         scanData: [scanData],
@@ -100,9 +100,18 @@ export const FloatingButtons: React.FC = () => {
     } = useContext(AppContext)!;
     const navigate = useNavigate();
 
-    const navPath = isSearching ? "" : "search";
     const navButtonPath = isSearching ? "icons/home.png" : "icons/data.png";
     const label = isSearching ? "Home" : "Browse library";
+
+    const handleNavClick = () => {
+        if (isSearching) {
+            setIsSearching(false);
+            navigate("/");
+        } else {
+            setIsSearching(true);
+            navigate("search");
+        }
+    };
 
     // Matching scans for current search filters
     const matchingScans = React.useMemo(
@@ -114,11 +123,11 @@ export const FloatingButtons: React.FC = () => {
     );
 
     const matchingIds = React.useMemo(() => matchingScans.map((s) => s.scanID), [matchingScans]);
-    const allMatchingSelected =
+    const allFilteredSelected =
         matchingIds.length > 0 && matchingIds.every((id) => selectedScanIds.includes(id));
 
     const handleToggleSelectAll = () => {
-        if (allMatchingSelected) {
+        if (allFilteredSelected) {
             setSelectedScanIds((prev) => prev.filter((id) => !matchingIds.includes(id)));
         } else {
             setSelectedScanIds((prev) => Array.from(new Set([...prev, ...matchingIds])));
@@ -136,65 +145,7 @@ export const FloatingButtons: React.FC = () => {
                 zIndex: 1000
             }}
         >
-            {/* Scroll to Top */}
-            <FloatingButton
-                iconPath="icons/up.png"
-                onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
-                ariaLabel="Scroll to top"
-            />
-
-            {/* Navigation Home/Browse */}
-            <FloatingButton
-                iconPath={navButtonPath}
-                onClick={() => navigate(navPath)}
-                ariaLabel={label}
-            />
-
-            {/* Select/Deselect all matching search entries */}
-            {isSearching && matchingIds.length > 0 && (
-                <FloatingButton
-                    onClick={handleToggleSelectAll}
-                    ariaLabel={
-                        allMatchingSelected
-                            ? `Deselect all matching (${matchingIds.length})`
-                            : `Select all matching (${matchingIds.length})`
-                    }
-                    icon={
-                        allMatchingSelected ? (
-                            <svg
-                                width="22"
-                                height="22"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#2563eb"
-                                strokeWidth="2.2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            >
-                                <rect x="3" y="3" width="18" height="18" rx="4" fill="#eff6ff" />
-                                <polyline points="9 11 12 14 22 4" stroke="#2563eb" />
-                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-                            </svg>
-                        ) : (
-                            <svg
-                                width="22"
-                                height="22"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#475569"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            >
-                                <rect x="3" y="3" width="18" height="18" rx="4" />
-                                <polyline points="9 11 12 14 22 4" stroke="#94a3b8" />
-                            </svg>
-                        )
-                    }
-                />
-            )}
-
-            {/* Circular Blue Bulk Download / Export Button */}
+            {/* 1. Circular Blue Bulk Download / Export Button (at top, when items selected) */}
             {selectedScanIds.length > 0 && (
                 <FloatingButton
                     onClick={() => setShowExport(true)}
@@ -223,6 +174,66 @@ export const FloatingButtons: React.FC = () => {
                     }
                 />
             )}
+
+            {/* 2. Blue Select/Deselect all filtered entries (always present, above gallery/home) */}
+            <FloatingButton
+                onClick={handleToggleSelectAll}
+                ariaLabel={
+                    allFilteredSelected
+                        ? `Deselect all filtered entries (${matchingIds.length})`
+                        : `Select all filtered entries (${matchingIds.length})`
+                }
+                style={{
+                    background: "linear-gradient(135deg, #0d6efd 0%, #1d4ed8 100%)",
+                    boxShadow: "0 4px 14px rgba(13,110,253,0.45)",
+                    border: "2px solid #ffffff"
+                }}
+                icon={
+                    allFilteredSelected ? (
+                        <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#ffffff"
+                            strokeWidth="2.3"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        >
+                            <rect x="3" y="3" width="18" height="18" rx="4" fill="rgba(255,255,255,0.25)" />
+                            <polyline points="9 11 12 14 22 4" stroke="#ffffff" strokeWidth="2.8" />
+                        </svg>
+                    ) : (
+                        <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#ffffff"
+                            strokeWidth="2.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        >
+                            <rect x="3" y="3" width="18" height="18" rx="4" />
+                            <polyline points="9 11 12 14 22 4" stroke="rgba(255,255,255,0.5)" />
+                        </svg>
+                    )
+                }
+            />
+
+            {/* 3. Navigation Home/Browse */}
+            <FloatingButton
+                iconPath={navButtonPath}
+                onClick={handleNavClick}
+                ariaLabel={label}
+            />
+
+            {/* 4. Scroll to Top */}
+            <FloatingButton
+                iconPath="icons/up.png"
+                onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
+                ariaLabel="Scroll to top"
+            />
         </div>
     );
 };

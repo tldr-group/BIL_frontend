@@ -199,43 +199,8 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                     backgroundColor: "#f8fafc"
                                 }}
                             >
-                                <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12}}>
-                                    <span style={{fontWeight: 700, fontSize: "0.95rem", color: "#1e293b"}}>
-                                        1. Data Categories
-                                    </span>
-                                    <div style={{display: "flex", gap: 6}}>
-                                        <button
-                                            type="button"
-                                            onClick={() => handleSelectAllDataTypes(true)}
-                                            style={{
-                                                background: "none",
-                                                border: "none",
-                                                color: "#0d6efd",
-                                                fontSize: "0.75rem",
-                                                fontWeight: 600,
-                                                cursor: "pointer",
-                                                padding: 0
-                                            }}
-                                        >
-                                            All
-                                        </button>
-                                        <span style={{color: "#cbd5e1", fontSize: "0.75rem"}}>|</span>
-                                        <button
-                                            type="button"
-                                            onClick={() => handleSelectAllDataTypes(false)}
-                                            style={{
-                                                background: "none",
-                                                border: "none",
-                                                color: "#64748b",
-                                                fontSize: "0.75rem",
-                                                fontWeight: 600,
-                                                cursor: "pointer",
-                                                padding: 0
-                                            }}
-                                        >
-                                            None
-                                        </button>
-                                    </div>
+                                <div style={{fontWeight: 700, fontSize: "0.95rem", color: "#1e293b", marginBottom: 12}}>
+                                    1. Data Categories
                                 </div>
 
                                 <div style={{display: "flex", flexDirection: "column", gap: 8}}>
@@ -472,51 +437,6 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                                 <span style={{fontWeight: 700, fontSize: "1rem", color: "#1e293b"}}>
                                     Generated {scriptLanguage === "python" ? "Python" : "Bash"} Download Script
                                 </span>
-                                <div style={{display: "flex", gap: 8}}>
-                                    <Button
-                                        variant="outline-primary"
-                                        size="sm"
-                                        onClick={handleCopy}
-                                        style={{display: "flex", alignItems: "center", gap: 6, fontWeight: 600}}
-                                    >
-                                        <svg
-                                            width="15"
-                                            height="15"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeWidth="2.2"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        >
-                                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-                                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-                                        </svg>
-                                        {copied ? "Copied!" : "Copy Script"}
-                                    </Button>
-                                    <Button
-                                        variant="primary"
-                                        size="sm"
-                                        onClick={handleDownloadScript}
-                                        style={{display: "flex", alignItems: "center", gap: 6, fontWeight: 600}}
-                                    >
-                                        <svg
-                                            width="15"
-                                            height="15"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeWidth="2.2"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        >
-                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                            <polyline points="7 10 12 15 17 10" />
-                                            <line x1="12" y1="15" x2="12" y2="3" />
-                                        </svg>
-                                        Download {scriptLanguage === "python" ? ".py" : ".sh"} File
-                                    </Button>
-                                </div>
                             </div>
 
                             {/* Script Viewer */}
@@ -570,9 +490,49 @@ const ExportModal: FC<ExportModalProps> = ({show, onClose}) => {
                     Close
                 </Button>
                 {selectedScans.length > 0 && (
-                    <Button variant="primary" onClick={handleDownloadScript}>
-                        Download Script File
-                    </Button>
+                    <>
+                        <Button
+                            variant="outline-primary"
+                            onClick={handleCopy}
+                            style={{display: "flex", alignItems: "center", gap: 6, fontWeight: 600}}
+                        >
+                            <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2.2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                            </svg>
+                            {copied ? "Copied!" : "Copy Script"}
+                        </Button>
+                        <Button
+                            variant="primary"
+                            onClick={handleDownloadScript}
+                            style={{display: "flex", alignItems: "center", gap: 6, fontWeight: 600}}
+                        >
+                            <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2.2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                            Download {scriptLanguage === "python" ? ".py" : ".sh"} File
+                        </Button>
+                    </>
                 )}
             </Modal.Footer>
         </Modal>
