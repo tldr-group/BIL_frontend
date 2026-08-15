@@ -5293,5 +5293,37 @@
             "reconstructedZenodoLinks": ["https://doi.org/10.5281/zenodo.18602396"],
             "reconstructedZenodoLabels": [""]
         }
+    },
+    {
+        "scanID": 129,
+        "sampleID": 76,
+        "sampleName": "Solid-state NMC electrode with ISE",
+        "chemistry": "NMC",
+        "electrolyteType": "SOLID",
+        "cellType": "SECONDARY",
+        "cellFormat": "UNKNOWN",
+        "sampleDescription": "SEM of solid-state NMC with \"thiophosphate-based glassy\" inorganic solid electroyte, with segmentation of pore phase",
+        "scanType": "ELECTRODE",
+        "scanModality": "SEM",
+        "instrument": "Tescan XEIA3",
+        "pixelSize_µm": [0.1, 0.1],
+        "dataDimensions_px": [824, 824],
+        "dataDimensions_µm": [82.4, 82.4],
+        "thumbnailType": "2H",
+        "thumbnailName": ["129_1H.webp", "129_2H.webp"],
+        "scanParameters": {},
+        "citations": [
+            "R. Docherty et al, 'Battery Imaging Library: Multi-length scale and multi-modal synchrotron and laboratory battery imaging data for all', chemRxiv preprint, (2025)"
+        ],
+        "contributors": "Moritz Pawlowsky",
+        "licence": "CC-4.0",
+        "zenodoLinks": {
+            "rawZenodoLinks": [""],
+            "rawZenodoLabels": [""],
+            "processedZenodoLinks": [""],
+            "processedZenodoLabels": [""],
+            "reconstructedZenodoLinks": [""],
+            "reconstructedZenodoLabels": [""]
+        }
     }
 ]
